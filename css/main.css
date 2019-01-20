@@ -1,0 +1,204 @@
+/*
+   Primary colors:
+   red = #c40d0b
+   yellow = #ffe400
+*/
+
+
+body {background: white url('../bg.jpg'); font-size:15px}
+
+@font-face { /* don't change order or syntax here */
+    font-family: Quicksand;
+    src: url('../webfonts/Quicksand_Book-webfont.eot');
+    src: local('Quicksand Book'), url('../webfonts/Quicksand_Book-webfont.ttf') format("truetype");
+}
+
+h1, div,p  {font-family:Quicksand, Century Gothic, Apple Gothic, sans-serif; line-height:1.6em}
+
+a, a:visited, a:link {color: #c40d0b; text-decoration:none; font-weight:bold}
+
+::selection {background: #c40d0b; color: white;}
+.highlighter {background: #ffe400; font-style: italic}
+
+.row {
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.section-wrapper {clear:both;}
+.section-wrapper>h1, .section-wrapper>h2 {display:inline-block; height:32px; text-align:left; font-size:25px; line-height:32px; font-weight:100;}
+.section-wrapper>h1 {color:#fff; padding:5px 2em 5px 10%; background-color:#000; }
+.section-wrapper>h2 {color:#000; padding:5px 3em 5px 10%; background-color:#ffe400; margin-top:32px; }
+
+.text-block {
+    float: none;
+    clear:left;
+    padding: 0 5% 0 5%;
+}
+
+@media screen and (min-width: 852px) {
+    .text-block {
+        float: left;
+        width:50%;
+        max-width: 520px;
+        padding-left:10%;
+    }
+}
+
+/* above the fold */
+
+#livingroom {
+    min-height: 95vh; /* Next section should only ever peek over "fold" */
+}
+
+#couchcorner {
+    /* additional styles apply for screen widths over 852px, see below */
+    height: 87vh;
+    width: 100%;
+}
+#couchcorner>div {
+    height: 100%;
+    width: 376px;
+    max-width: 100%; /* for screens even narrower than 376px, shrink the couch */
+    position: relative;
+    margin: auto;
+}
+#mynameisjonas    {position:absolute; bottom:283px; left:41px; width:320px; height:32px; overflow:hidden; text-align:right; background-color:#000; padding:5px;}
+#mynameisjonas p  {margin:0; color:#fff; font-size:25px; line-height:32px;}
+#speakingbubble1  {position:absolute; bottom:273px; left:291px;}
+#couch            {position:absolute; bottom:0px; left:0; width:376px; max-width:100%;}
+
+#aboutjonas {
+    width: 100%;
+}
+#aboutjonas>div {
+    padding: 0 10%;
+}
+
+@media screen and (min-width: 852px) {
+    #couchcorner {
+        float: right;
+        max-width: 40vw; /* don't get closer than 10% screen width of center line */
+    }
+    #couchcorner>div {
+        margin: 0; /* override margin:auto from default layout */
+    }
+    #aboutjonas {
+        float: left;
+        max-width: 42vw; /* don't get closer than 5% screen width of center line */
+    }
+    #aboutjonas>div {
+        width: 100%;
+        max-width: 520px;
+        margin: 13.5% 0 0 15%;
+    }
+}
+
+
+/* project list */
+
+#projects .projectgroup {margin: 3% 0 0 10%; clear:both}
+#projects .projecticon img{float:left; opacity: 0.95; height: 100px}
+#projects .projecticon {text-align:left; margin-right:80px}
+#projects .projecticon p {margin-top:70px; color:red; font-size:25px}
+#projects a.projecttile {float: left; width:200px; text-align: center; padding-right:40px; font-weight:normal; color: #222}
+#projects a.projecttile img {border-width: 2px; border-style: solid; border-color: #383838;}
+
+
+
+#prepolaroidcubes {width:100%; height:150px; margin-top:150px}
+#polaroids {background-color: #ffe400}
+#credits {font-size: 0.8em; padding: 150px 0 150px 0; text-align:center}
+
+/* polaroid photos, source: http://www.zurb.com/playground/css3-polaroids */
+ul.polaroids { margin: 70px auto 70px auto; list-style: none outside; }
+ul.polaroids li { display: inline; }
+ul.polaroids a { background: white; display: inline; float: left; margin: 0 0 27px 30px; width: auto; padding: 10px 10px 15px; text-align: center; font-family: "Marker Felt", sans-serif; text-decoration: none; color: #333; font-size: 18px; -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25); -webkit-transform: rotate(-2deg); -webkit-transition: -webkit-transform .15s linear; -moz-transform: rotate(-2deg); }
+ul.polaroids img { display: block; width: 190px; margin-bottom: 12px; }
+#polaroids ul.polaroids li a:after { content: attr(title); }
+/* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
+#polaroids ul.polaroids li a:hover { -webkit-transform: scale(1.5); -moz-transform: scale(1.5); position: relative; z-index: 5; }
+/* Rotate all even images 2 degrees */
+ul.polaroids li:nth-child(even) a { -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); }
+/* Don't rotate every third image, but offset its position */
+ul.polaroids li:nth-child(3n) a { -webkit-transform: none; -moz-transform: none; position: relative; top: -5px; }
+/* Rotate every fifth image by 5 degrees and offset it */
+ul.polaroids li:nth-child(5n) a { -webkit-transform: rotate(5deg); -moz-transform: rotate(5deg); position: relative; right: 5px; }
+/* Keep default rotate for every eighth, but offset it */
+ul.polaroids li:nth-child(8n) a { position: relative; top: 8px; right: 5px; }
+/* Keep default rotate for every eleventh, but offset it */
+ul.polaroids li:nth-child(11n) a { position: relative; top: 3px; left: -5px; }
+
+
+/* Project Pages */
+
+#projectsiteSidebar {position:fixed; right:0; top:0; width:180px; height:100%; background:#D6D6D6; opacity:0.93}
+#projectsiteSidebar p {margin: 10px 25px; font-size: 0.8em;}
+#projectsiteSidebarImage {text-align:center; margin-top:20px}
+
+#aboutTheProject {max-width: 520px; margin: 6% 45% 0 10%; padding: 0;} /* descriptive text on a project page, currently simply modeled after the text on the start page */
+#aboutTheProject2 { padding-top:36px; padding-left: 93px; margin:0; padding-right:200px /* so that when scrolled all the way right nothing is hidden under the sidebar */}
+
+#aboutTheProject2  .tile { float:left; margin-right: 16px; margin-bottom: 16px }
+#aboutTheProject2 .below { clear:both; }
+#aboutTheProject2 div.tileContainer { float:left; margin:0; padding:0}
+
+#aboutTheProject2 .tileWidth1 {width:194px; }
+#aboutTheProject2 .tileHeight1 {height:194px;}
+#aboutTheProject2 .tileWidth2 {width:404px;}
+#aboutTheProject2 .tileHeight2 {height:404px;}
+#aboutTheProject2 .tileWidth3 {width:614px;}
+#aboutTheProject2 .tileHeight3 {height:614px;}
+#aboutTheProject2 .tileWidth4 {width:824px;}
+#aboutTheProject2 .tileHeight4 {height:824px;}
+
+#aboutTheProject2 .tilehyperlink {background-image:url('../noun_project_7365_hyperlink_pointer.svg'); background-repeat: no-repeat; background-position:center 20px; background-size:108px; text-align:center; line-height:310px}
+
+#aboutTheProject2  .tile.text >p {padding: 0 20px}
+
+#aboutTheProject2 h1 {display:none}
+
+#tilenavLeft {display:block; position: fixed; left: 0; top: 0; width: 140px; height: 100%;}
+#tilenavLeft div {height:120px; width:120px; margin: 288px 0 0 20px; border-radius:30px; opacity: 0.3; color: #fff; background: url('../noun_project_5298_arrow_left.svg') no-repeat center center white;}
+#tilenavLeft:hover div {opacity:0.80; background-color: #fff;}
+
+#tilenavRight {display:block; position: fixed; right: 180px; top: 0; width: 140px; height: 100%; }
+#tilenavRight div {height:120px; width:120px; margin: 288px 0 0 0; border-radius:30px; opacity: 0.3; color: #fff; background:url('../noun_project_5299_arrow_right.svg') no-repeat center center white;}
+#tilenavRight:hover div {opacity:0.80; background-color: #fff;}
+
+@media screen and (min-width: 1200px) { /* this one has the same effect as min-width on the #projectsiteSidebar rules, but takes care of moving #tilenavRight accordingly*/
+    #projectsiteSidebar {width:15%;}
+    #tilenavRight {right: 15%;}
+}
+
+.projectDetailsLine { clear:both; margin:10px 0 0 30px; }
+.projectDetailsLineHeading {clear: both; float: left; width:150px; font-weight:bold; }
+.projectDetailsLineContent {border-bottom: 1px solid white; margin-left: 150px; width: 400px;}
+
+.bgDenim1 {background-color: #0F2440; color: #fff}
+.bgDenim2 {background-color: #284259; color: #fff}
+.bgDenim3 {background-color: #61788C; color: #fff}
+.bgDenim4 {background-color: #74888C; color: #fff}
+.bgDenim5 {background-color: #BEBFB4; color: #fff}
+
+.bgGrey1 {background-color:#2f2e2b; color: #fff}
+
+.bgCardinal1 {background-color: #630E05; color: #fff}
+.bgCardinal2 {background-color: #660F05; color: #fff}
+.bgCardinal3 {background-color: #871909; color: #fff}
+.bgCardinal4 {background-color: #941A0B; color: #fff}
+.bgCardinal5 {background-color: #6D1308; color: #fff}
+.bgCardinal1 a, .bgCardinal1 a:visited, .bgCardinal1 a:link, .bgCardinal2 a, .bgCardinal2 a:visited, .bgCardinal2 a:link, .bgCardinal3 a, .bgCardinal3 a:visited, .bgCardinal3 a:link , .bgCardinal4 a, .bgCardinal4 a:visited, .bgCardinal4 a:link , .bgCardinal5 a, .bgCardinal5 a:visited, .bgCardinal5 a:link, a.bgCardinal1, a.bgCardinal2, a.bgCardinal3, a.bgCardinal4, a.bgCardinal5  {color: #bfbfbf;}
+
+.bgGreen1 {background-color: #205E15; color: #fff}
+.bgGreen2 {background-color: #39A925; color: #fff}
+.bgGreen3 {background-color: #226616; color: #fff}
+.bgGreen4 {background-color: #3DB628; color: #fff}
+.bgGreen5 {background-color: #308F1F; color: #fff}
+
+.bgYellow1 {background-color: #; color: #333}
+.bgYellow2 {background-color: #; color: #333}
+.bgYellow3 {background-color: #; color: #333}
+.bgYellow4 {background-color: #; color: #333}
+.bgYellow5 {background-color: #; color: #333}
