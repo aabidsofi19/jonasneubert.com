@@ -101,6 +101,27 @@ a, a:visited, a:link {
 }
 
 
+/* navigation bar */
+
+#navbar {
+    background-color: #ffe400;
+    text-align: center;
+    padding: 5em 0;
+}
+
+#navbar a {
+    display: inline-block;
+    font-size: 2em;
+    color: black;
+    width: 4em;
+    border: 3px solid black;
+    border-radius: 0.2em;
+    padding: 0.3em;
+    margin: 0.2em;
+    text-transform: uppercase;
+}
+
+
 /* project list */
 
 #projects .projectgroup {margin: 3% 0 0 10%; clear:both}
