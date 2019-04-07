@@ -5,17 +5,20 @@
 */
 
 
-body {background: white; font-size:15px}
-
-@font-face { /* don't change order or syntax here */
-    font-family: Quicksand;
-    src: url('../webfonts/Quicksand_Book-webfont.eot');
-    src: local('Quicksand Book'), url('../webfonts/Quicksand_Book-webfont.ttf') format("truetype");
+body {
+    background: white; 
+    font-family:Quicksand, Century Gothic, Apple Gothic, sans-serif; 
+    font-size:15px;
+    letter-spacing: 0.04em;  /* bring back spacing from pre-Google fonts version of Quicksand */
+    line-height:1.6em;
+    font-weight:300;
 }
 
-h1, div,p  {font-family:Quicksand, Century Gothic, Apple Gothic, sans-serif; line-height:1.6em}
-
-a, a:visited, a:link {color: #c40d0b; text-decoration:none; font-weight:bold}
+a, a:visited, a:link {
+    color: #c40d0b; 
+    text-decoration:none; 
+    font-weight:500;
+}
 
 ::selection {background: #c40d0b; color: white;}
 .highlighter {background: #ffe400; font-style: italic}
@@ -72,6 +75,7 @@ a, a:visited, a:link {color: #c40d0b; text-decoration:none; font-weight:bold}
 
 #aboutjonas {
     width: 100%;
+    font-weight: 500; /* Quicksand "medium" */
 }
 #aboutjonas>div {
     padding: 0 10%;
