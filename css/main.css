@@ -5,7 +5,7 @@
 */
 
 
-body {background: white url('../bg.jpg'); font-size:15px}
+body {background: white; font-size:15px}
 
 @font-face { /* don't change order or syntax here */
     font-family: Quicksand;
@@ -50,6 +50,7 @@ a, a:visited, a:link {color: #c40d0b; text-decoration:none; font-weight:bold}
 
 #livingroom {
     min-height: 95vh; /* Next section should only ever peek over "fold" */
+    background: white url('../bg.jpg');
 }
 
 #couchcorner {
