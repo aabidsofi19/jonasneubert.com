@@ -7,7 +7,7 @@
 
 body {
     background: white; 
-    font-family:Quicksand, Century Gothic, Apple Gothic, sans-serif; 
+    font-family: Quicksand, "Century Gothic", AppleGothic, sans-serif; 
     font-size:15px;
     letter-spacing: 0.04em;  /* bring back spacing from pre-Google fonts version of Quicksand */
     line-height:1.6em;
@@ -20,8 +20,15 @@ a, a:visited, a:link {
     font-weight:500;
 }
 
-::selection {background: #c40d0b; color: white;}
-.highlighter {background: #ffe400; font-style: italic}
+::selection {
+    background: #c40d0b;
+    color: white;
+}
+
+.highlighter {
+    background: #ffe400;
+    font-style: italic;
+}
 
 .row {
     width:100%;
@@ -29,10 +36,32 @@ a, a:visited, a:link {
     padding:0;
 }
 
-.section-wrapper {clear:both;}
-.section-wrapper>h1, .section-wrapper>h2 {display:inline-block; height:32px; text-align:left; font-size:25px; line-height:32px; font-weight:100;}
-.section-wrapper>h1 {color:#fff; padding:5px 2em 5px 10%; background-color:#000; }
-.section-wrapper>h2 {color:#000; padding:5px 3em 5px 10%; background-color:#ffe400; margin-top:32px; }
+.section-wrapper {
+    clear:both;
+}
+
+.section-wrapper>h1, .section-wrapper>h2 {
+    display: inline-block;
+    height: 32px;
+    text-align: left;
+    font-family: "Poiret One", sans-serif;
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 100;
+}
+
+.section-wrapper>h1 {
+    color: #fff;
+    padding: 5px 2em 5px 10%;
+    background-color: #000;
+}
+
+.section-wrapper>h2 {
+    color: #000;
+    padding: 5px 3em 5px 10%;
+    background-color: #ffe400;
+    margin-top: 32px;
+}
 
 .text-block {
     float: none;
@@ -51,13 +80,14 @@ a, a:visited, a:link {
 
 /* above the fold */
 
+/* additional styles apply for screen widths over 852px, see below */
+
 #livingroom {
     min-height: 95vh; /* Next section should only ever peek over "fold" */
     background: white url('../bg.jpg');
 }
 
 #couchcorner {
-    /* additional styles apply for screen widths over 852px, see below */
     height: 87vh;
     width: 100%;
 }
@@ -68,15 +98,50 @@ a, a:visited, a:link {
     position: relative;
     margin: auto;
 }
-#mynameisjonas    {position:absolute; bottom:283px; left:41px; width:320px; height:32px; overflow:hidden; text-align:right; background-color:#000; padding:5px;}
-#mynameisjonas p  {margin:0; color:#fff; font-size:25px; line-height:32px;}
-#speakingbubble1  {position:absolute; bottom:273px; left:291px;}
-#couch            {position:absolute; bottom:0px; left:0; width:376px; max-width:100%;}
+#mynameisjonas {
+    position: absolute;
+    bottom: 283px;
+    left: 41px;
+    width: 320px;
+    height: 32px;
+    overflow: hidden;
+    text-align: right;
+    background-color: #000;
+    padding: 5px;
+}
+
+#mynameisjonas>p {
+    margin: 0;
+    color: #fff;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 25px;
+    line-height: 32px;
+}
+
+#mynameisjonas>p::after {
+    content: "↵";
+    font-size: 0.5rem;
+}
+
+#speakingbubble1 {
+    position: absolute;
+    bottom: 273px;
+    left: 291px;
+}
+
+#couch {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 376px;
+    max-width: 100%;
+}
 
 #aboutjonas {
     width: 100%;
     font-weight: 500; /* Quicksand "medium" */
 }
+
 #aboutjonas>div {
     padding: 0 10%;
 }
