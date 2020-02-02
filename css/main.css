@@ -196,9 +196,6 @@ a, a:visited, a:link {
 #projects a.projecttile {float: left; width:200px; text-align: center; padding-right:40px; font-weight:normal; color: #222}
 #projects a.projecttile img {border-width: 2px; border-style: solid; border-color: #383838;}
 
-
-
-#prepolaroidcubes {width:100%; height:150px; margin-top:150px}
 #polaroids {background-color: #ffe400}
 #credits {font-size: 0.8em; padding: 150px 0 150px 0; text-align:center}
 
