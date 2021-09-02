@@ -1,73 +1,88 @@
-<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Jonas Neubert">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Jonas Neubert">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
-    <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.svg">
+  <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
+  <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tachyons.css"/>
+  <link rel="stylesheet" href="/css/tufte.css"/>
 
-    <link rel="stylesheet" href="../../css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="../../css/html5-boilerplate-v5.3.0.css">
-    <link rel="stylesheet" href="../../css/main.css">
-
-  <title>Jonas Neubert is a grad student at Cornell building little robots</title>
-  <meta name="viewport" content="width=1040px">
+  <title>Reviving a Mitsubishi Movemaster robot arm - A project by Jonas Neubert</title>
 </head>
 <body>
 
-  <div id="main" role="main">
+  <div class="flex-l">
 
-  <div id="main" role="main">
-
-    <div id="aboutTheProject2" style="width: 1000px;">
-
-      <img class="tile tileWidth1 tileHeight1" src="../../photos/movemaster/movemaster-sketch.jpg">
-
-      <div class="tile tileWidth3 tileHeight1 text bgGrey1">
-        <p>This was my Final Year Project for my 4-year undergraduate degree in Mechanical Engineering at <a href="https://en.wikipedia.org/wiki/Imperial_College_London">Imperial College London</a>. They gave me a really old robot arm without a control box and without documentation, and my job was to make it do that robot thing again. In the process I learned to always use a fuse and enough about LabVIEW and National Instruments products to author <a href="http://sine.ni.com/cs/app/doc/p/id/cs-11632">a case study for one of their PR brochures</a>.</p>
-      </div>
-
-      <div class="tile tileWidth4 tileHeight2 text bgGrey1 below">
-        <p> Project Abstract</p>
-        <p>A twenty year old Mitsubishi Movemaster RM-501 five-axis articulated robot has been reverse
-          engineered and a National Instruments CompactRIO programmable controller is programmed
-          provide an interface to control the robot from a PC. This report includes information on
-          components and circuitry of the RM-501 robot. This  information is then used to build a
-          hardware interface between CompactRIO and the robot. On the CompactRIO’s FPGA a
-          hardware driver is implemented, which reads the robot’s encoder signal and provides a pulse
-          width modulated signal to the robot driver. Forwardand inverse kinematics of the robot as
-          well as a proportional controller are implemented using LabVIEW. Concluding, an evaluation
-          of the RM-501 as project focus is given and recommendations for further work are made.</p>
+    <div class="dn db-l flex-none measure-narrow-l pa3" style="background: #ffe400">
+      <div style="width: 20em;">
       </div>
     </div>
 
+    <header class="fixed-l flex-auto measure-narrow-l pa3" style="background: #ffe400">
+      <h1 class="mv0 f2 f1-l fw4 tracked-tight avenir">
+        <a href="/" class="link near-black db-l">Jonas</a>
+        <a href="/" class="link near-black db-l pl2-l">Neubert</a>
+      </h1>
+
+      <p class="f6 pl2 avenir near-black">
+        builds software for laboratories<br>
+        (and other things that involve bits and atoms)
+      </p>
+
+      <nav class="pl1 helvetica">
+        <ul class="list ml0 pl0 mb0 near-black">
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/">About</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/work.html">Projects</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/talks/">Talks</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://blog.jonasneubert.com">Blog</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://twitter.com/jonemo">Twitter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-auto nested-img pl4 pr4 pb4">
+      <article>
+
+        <h1><span class="bg-black-90 lh-copy white pa1 tracked-tight">Mitsubishi Movemaster</span></h1>
+
+        <p class="subtitle">Reverse engineering (and reviving) a 20-year old robot arm</p>
+
+        <section>
+
+          <figure>
+            <img src="../../photos/movemaster/movemaster-sketch.jpg">
+          </figure>
+
+          <p>
+            This was my Final Year Project for my 4-year undergraduate degree in Mechanical Engineering at <a href="https://en.wikipedia.org/wiki/Imperial_College_London">Imperial College London</a>.
+            They gave me a really old robot arm without a control box and without documentation, and my job was to make it do that robot thing again.
+            In the process I learned to always use a fuse and enough about LabVIEW and National Instruments products to author <a href="http://sine.ni.com/cs/app/doc/p/id/cs-11632">a case study for one of their PR brochures</a>.
+          </p>
+
+        </section>
+
+        <section>
+          <h2>Project Abstract</h2>
+          <p>A twenty year old Mitsubishi Movemaster RM-501 five-axis articulated robot has been reverse
+            engineered and a National Instruments CompactRIO programmable controller is programmed
+            to provide an interface to control the robot from a PC. This report includes information on
+            components and circuitry of the RM-501 robot. This information is then used to build a
+            hardware interface between CompactRIO and the robot. On the CompactRIO’s FPGA, a
+            hardware driver is implemented, which reads the robot’s encoder signal and provides a pulse
+            width modulated signal to the robot driver. Forward and inverse kinematics of the robot as
+            well as a proportional controller are implemented using LabVIEW. Concluding, an evaluation
+            of the RM-501 as project focus is given and recommendations for further work are made.
+          </p>
+        </section>
+
+      </article>
+    </main>
   </div>
-
-  </div>
-
-<div id="projectsiteSidebar">
-  <div id="projectsiteSidebarImage">
-    <img src="../../couch.png" height="88" width="125" alt="">
-  </div>
-
-  <p>Hi, I'm Jonas. I write software for factories and like talking about modular robotics, 3D printing, digital manufacturing, mass customization, 3D&nbsp;for the web, geography, photography, [insert topic&nbsp;here]. You are on <a href="/">my personal website</a>.</p>
-</div>
-  <a id="tilenavLeft" href="#">
-    <div>&nbsp;</div>
-  </a>
-
-  <a id="tilenavRight" href="#" onclick="$.scrollTo('+210px', 800); return false;">
-    <div>&nbsp;</div>
-  </a>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
-<script src="../../js/plugins.js"></script>
-<script src="../../js/main.js"></script>
 
 <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
