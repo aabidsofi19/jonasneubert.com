@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Jonas Neubert">
@@ -10,83 +10,116 @@
   <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
   <link href="//fonts.googleapis.com/css?family=Quicksand:300,500|Poiret+One|Cutive+Mono" rel="stylesheet">
-
-  <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/tachyons.css"/>
+  <link rel="stylesheet" href="/css/tufte.css"/>
 
   <style>
-    body { margin: 2em; }
-
     #speakerdeck-embed-container {
       max-width: 40em;
+    }
+
+    main {
+      background: white;
+      font-family: Quicksand, "Century Gothic", AppleGothic, sans-serif;
+      font-size:15px;
+      letter-spacing: 0.04em;  /* bring back spacing from pre-Google fonts version of Quicksand */
+      line-height:1.6em;
+      font-weight:300;
     }
   </style>
 
   <title>Python &amp; Programmable Logic Controllers: A Step by Step Guide - PyCon India 2020 - Jonas Neubert</title>
 </head>
 <body>
+  <div class="flex-l">
 
-  <div id="navbar" class="row clearfix" style="padding: 1em 0">
-    <a href="/">About</a>
-    <a href="/work.html">Work</a>
-    <a href="/talks/">Talks</a>
-    <a href="https://blog.jonasneubert.com/">Blog</a>
+    <div class="dn db-l flex-none measure-narrow-l pa3" style="background: #ffe400">
+      <div style="width: 20em;">
+      </div>
+    </div>
+
+    <header class="fixed-l flex-auto measure-narrow-l pa3" style="background: #ffe400">
+      <h1 class="mv0 f2 f1-l fw4 tracked-tight avenir">
+        <a href="/" class="link near-black db-l">Jonas</a>
+        <a href="/" class="link near-black db-l pl2-l">Neubert</a>
+      </h1>
+
+      <p class="f6 pl2 avenir near-black">
+        builds software for laboratories<br>
+        (and other things that involve bits and atoms)
+      </p>
+
+      <nav class="pl1 helvetica">
+        <ul class="list ml0 pl0 mb0 near-black">
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/">About</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/work.html">Projects</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/talks/">Talks</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://blog.jonasneubert.com">Blog</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://twitter.com/jonemo">Twitter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-auto nested-img pl4 pr4 pb4">
+
+      <h1>Python &amp; Programmable Logic Controllers: A Step by Step Guide</h1>
+
+      <p>Presented at <strong>PyCon India 2020</strong>, October 2020, Virtual Conference</p>
+      <p><a href="https://in.pycon.org/cfp/2020/proposals/python-programmable-logic-controllers-a-step-by-step-guide~dwp98/">Abstract on conference website</a></p>
+
+      <h2>Video</h2>
+
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gsPlmBDxHH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <h2>Slides</h2>
+
+      <div id="speakerdeck-embed-container">
+        <script async class="speakerdeck-embed" data-id="c6c4f8775bdc449f86305b89fa9dab44" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+      </div>
+
+      <h2>Links from the presentation</h2>
+
+      <h3>General Information on Modbus</h3>
+
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Modbus">Modbus on Wikiped</a> has both high level information as well as detailed specifications on the protocol.
+      </p>
+
+      <h3>Python Modbus implementations mentioned</h3>
+
+      <ul>
+        <li><a href="https://pypi.org/project/pymodbus/">pymodbus</a></li>
+        <li><a href="https://pypi.org/project/modbus_tk/">modbus-tk</a></li>
+        <li><a href="https://pypi.org/project/pyModbusTCP/">pyModbusTCP</a></li>
+        <li><a href="https://pypi.org/project/MinimalModbus/">MinimalModbus</a></li>
+        <li><a href="https://pypi.org/project/umodbus/">uModbus</a></li>
+        <li><a href="https://gitlab.com/extel-open-source/micropython-modbus">micropython-modbus</a></li>
+        <li><a href="https://pypi.org/project/ctmodbus/">ctmodbus</a></li>
+      </ul>
+
+      <h3>Other Links</h3>
+
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/List_of_automation_protocols">List of Automation Protocols</a> on Wikipedia</li>
+        <li><a href="https://en.wikipedia.org/wiki/List_of_PLC_manufacturers">List of PLC Manufacturers</a> on Wikipedia</li>
+        <li><a href="https://blog.jonasneubert.com/neubertify/2019/04/27/list-of-plc-brand-names-and-products/">My spreadsheet of PLC brands and products (2019)</a></li>
+        <li><a href="https://www.reddit.com/r/PLC/comments/ehu2u3/read_first_how_to_learn_plcs_and_get_into_the/">Reddit thread collecting resources for getting started with PLCs</a></li>
+      </ul>
+
+      <p>More links related to Python &amp; PLCs are available on the page for my 2019 PyCon US talk: <a href="./pycon2019.html">What is a PLC and how do I talk Python to it?</a></p>
+
+    </main>
+
   </div>
 
-  <h1>Python &amp; Programmable Logic Controllers: A Step by Step Guide</h1>
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-435125-8','auto');ga('send','pageview');
+</script>
 
-  <p>Presented at <strong>PyCon India 2020</strong>, October 2020, Virtual Conference</p>
-  <p><a href="https://in.pycon.org/cfp/2020/proposals/python-programmable-logic-controllers-a-step-by-step-guide~dwp98/">Abstract on conference website</a></p>
-
-  <h2>Video</h2>
-
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gsPlmBDxHH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  <h2>Slides</h2>
-
-  <div id="speakerdeck-embed-container">
-    <script async class="speakerdeck-embed" data-id="c6c4f8775bdc449f86305b89fa9dab44" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-  </div>
-
-  <h2>Links from the presentation</h2>
-
-  <h3>General Information on Modbus</h3>
-
-  <p>
-    <a href="https://en.wikipedia.org/wiki/Modbus">Modbus on Wikiped</a> has both high level information as well as detailed specifications on the protocol.
-  </p>
-
-  <h3>Python Modbus implementations mentioned</h3>
-
-  <ul>
-    <li><a href="https://pypi.org/project/pymodbus/">pymodbus</a></li>
-    <li><a href="https://pypi.org/project/modbus_tk/">modbus-tk</a></li>
-    <li><a href="https://pypi.org/project/pyModbusTCP/">pyModbusTCP</a></li>
-    <li><a href="https://pypi.org/project/MinimalModbus/">MinimalModbus</a></li>
-    <li><a href="https://pypi.org/project/umodbus/">uModbus</a></li>
-    <li><a href="https://gitlab.com/extel-open-source/micropython-modbus">micropython-modbus</a></li>
-    <li><a href="https://pypi.org/project/ctmodbus/">ctmodbus</a></li>
-  </ul>
-
-  <h3>Other Links</h3>
-
-  <ul>
-    <li><a href="https://en.wikipedia.org/wiki/List_of_automation_protocols">List of Automation Protocols</a> on Wikipedia</li>
-    <li><a href="https://en.wikipedia.org/wiki/List_of_PLC_manufacturers">List of PLC Manufacturers</a> on Wikipedia</li>
-    <li><a href="https://blog.jonasneubert.com/neubertify/2019/04/27/list-of-plc-brand-names-and-products/">My spreadsheet of PLC brands and products (2019)</a></li>
-    <li><a href="https://www.reddit.com/r/PLC/comments/ehu2u3/read_first_how_to_learn_plcs_and_get_into_the/">Reddit thread collecting resources for getting started with PLCs</a></li>
-  </ul>
-
-  <p>More links related to Python &amp; PLCs are available on the page for my 2019 PyCon US talk: <a href="./pycon2019.html">What is a PLC and how do I talk Python to it?</a>.</p>
-
-
-  <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-435125-8','auto');ga('send','pageview');
-  </script>
 </body>
 </html>

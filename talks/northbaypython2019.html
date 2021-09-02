@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Jonas Neubert">
@@ -10,97 +10,129 @@
   <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
   <link href="//fonts.googleapis.com/css?family=Quicksand:300,500|Poiret+One|Cutive+Mono" rel="stylesheet">
-
-  <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/tachyons.css"/>
+  <link rel="stylesheet" href="/css/tufte.css"/>
 
   <style>
-    body { margin: 2em; }
-
     #speakerdeck-embed-container {
       max-width: 40em;
+    }
+
+    main {
+      background: white;
+      font-family: Quicksand, "Century Gothic", AppleGothic, sans-serif;
+      font-size:15px;
+      letter-spacing: 0.04em;  /* bring back spacing from pre-Google fonts version of Quicksand */
+      line-height:1.6em;
+      font-weight:300;
     }
   </style>
 
   <title>What is a PLC and how do I talk Python to it? - North Bay Python 2019 - Jonas Neubert</title>
 </head>
 <body>
+  <div class="flex-l">
 
-  <div id="navbar" class="row clearfix" style="padding: 1em 0">
-    <a href="/">About</a>
-    <a href="/work.html">Work</a>
-    <a href="/talks/">Talks</a>
-    <a href="https://blog.jonasneubert.com/">Blog</a>
+    <div class="dn db-l flex-none measure-narrow-l pa3" style="background: #ffe400">
+      <div style="width: 20em;">
+      </div>
+    </div>
+
+    <header class="fixed-l flex-auto measure-narrow-l pa3" style="background: #ffe400">
+      <h1 class="mv0 f2 f1-l fw4 tracked-tight avenir">
+        <a href="/" class="link near-black db-l">Jonas</a>
+        <a href="/" class="link near-black db-l pl2-l">Neubert</a>
+      </h1>
+
+      <p class="f6 pl2 avenir near-black">
+        builds software for laboratories<br>
+        (and other things that involve bits and atoms)
+      </p>
+
+      <nav class="pl1 helvetica">
+        <ul class="list ml0 pl0 mb0 near-black">
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/">About</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/work.html">Projects</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/talks/">Talks</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://blog.jonasneubert.com">Blog</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://twitter.com/jonemo">Twitter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-auto nested-img pl4 pr4 pb4">
+
+      <h1>What is a PLC and how do I talk Python to it?</h1>
+
+      <p>Presented at <strong>North Bay Python 2019</strong>, Nov 2019, Petaluma, CA</p>
+      <p><a href="https://2019.northbaypython.org/schedule/presentation/17/">Abstract on conference website</a>. This was a modified version of the <a href="./pycon2019.html">talk I gave at PyCon 2019</a>.</p>
+
+      <h2>Video</h2>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EMkWRlbpJsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <h2>Slides</h2>
+
+      <div id="speakerdeck-embed-container">
+        <script async class="speakerdeck-embed" data-id="cb6670cd5c5c43b4b22e0e1969ec9aa5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+      </div>
+
+      <h2>Code from the presentation</h2>
+
+      <p>
+        <a href="https://github.com/jonemo/pycon2019-plc-demo">This Github repo</a> contains the PLC projects and Python code used during the presentation, as well as a few files that didn't make the cut due to the time limit.
+        Note that the PLC projects can be edited with the free "Productivity Suite" software (Windows only) which you can download from Automation Direct <a href="https://support.automationdirect.com/products/p3000.html">here</a>.
+        The README files in the repo should contain all the information needed to open the files.
+        To actually run the code, you will need to have a physical PLC.
+      </p>
+
+      <p>Please open an issue in the Github repo if you find an error or have a question!</p>
+
+      <h2>Links from the presentation</h2>
+
+      <h3>PyPI packages mentioned</h3>
+
+      <ul>
+        <li><a href="https://pypi.org/project/pycomm/">pycomm</a></li>
+        <li><a href="https://pypi.org/project/python-snap7/">python-snap7</a></li>
+        <li><a href="https://pypi.org/project/chwiede.pyads/">chwiede.pyads</a></li>
+        <li><a href="https://pypi.org/project/bfabio.pyads/">bfabio.pyads</a></li>
+        <li><a href="https://pypi.org/project/adshli/">adshli</a></li>
+        <li><a href="https://pypi.org/project/pyads/">pyads</a></li>
+        <li><a href="https://pypi.org/project/clickplc/">clickplc</a></li>
+        <li><a href="https://pypi.org/project/df1/">df1</a></li>
+        <li><a href="https://pypi.org/project/pcom/">pcom</a></li>
+        <li><a href="https://pypi.org/project/fatek-fbs-lib/">fatek-fbs-lib</a></li>
+        <li><a href="https://pypi.org/project/pymodbus/">pymodbus</a></li>
+        <li><a href="https://pypi.org/project/pyModbusTCP/">pyModbusTCP</a></li>
+        <li><a href="https://pypi.org/project/MinimalModbus/">MinimalModbus</a></li>
+        <li><a href="https://pypi.org/project/cpppo/">cpppo</a></li>
+        <li><a href="https://github.com/devkid/profinet">devkid/profinet</a> (Github link, no PyPI project)</li>
+        <li><a href="https://pypi.org/project/opcua/">opcua</a> (part of the <a href="https://github.com/FreeOpcUa/">FreeOpcUa project</a>)</li>
+        <li><a href="https://pypi.org/project/asyncua/">asyncua</a> (part of the <a href="https://github.com/FreeOpcUa/">FreeOpcUa project</a>)</li>
+        <li><a href="https://pypi.org/project/opcua-client/">opcua-client</a> (part of the <a href="https://github.com/FreeOpcUa/">FreeOpcUa project</a>)</li>
+        <li><a href="https://pypi.org/project/opcua-webclient/">opcua-webclient</a></li>
+        <li><a href="https://pypi.org/project/pysoem/">pysoem</a></li>
+        <li><a href="https://pypi.org/project/pyprofibus/">pyprofibus</a></li>
+        <li><a href="https://pypi.org/project/canopen/">canopen</a></li>
+        <li><a href="https://pypi.org/project/j1939/">j1939</a></li>
+        <li><a href="https://pypi.org/project/OpenOPC/">OpenOPC</a></li>
+        <li><a href="https://pypi.org/project/rawsocketpy/">rawsocketpy</a></li>
+        <li><a href="https://pypi.org/project/dnet/">dnet</a></li>
+      </ul>
+
+      <h3>Other Assorted Links</h3>
+
+      <ul>
+        <li><a href="http://www.geautomation.com/system/files/files/opc_ua_-_the_information_backbone_wp_gft909_2.pdf">This PDF by GE Automation</a> is a well-written introduction to what OPC-UA standardizes and how it came about to replace its Microsoft-only predecessor. See also the FreeOpcUa project above.</li>
+        <li><a href="https://en.wikipedia.org/wiki/List_of_automation_protocols">List of Automation Protocols</a> on Wikipedia</li>
+        <li><a href="https://en.wikipedia.org/wiki/List_of_PLC_manufacturers">List of PLC Manufacturers</a> on Wikipedia</li>
+        <li><a href="http://jonemo.github.io/neubertify/2019/04/27/list-of-plc-brand-names-and-products/">My spreadsheet of PLC brands and products</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/IEC_61131-3">IEC 61131-3</a> on Wikipedia</li>
+        <li><a href="https://en.wikipedia.org/wiki/IEC_61131">IEC 61131</a> on Wikipedia</li>
+      </ul>
+
+    </main>
   </div>
-
-  <h1>What is a PLC and how do I talk Python to it?</h1>
-
-  <p>Presented at <strong>North Bay Python 2019</strong>, Nov 2019, Petaluma, CA</p>
-  <p><a href="https://2019.northbaypython.org/schedule/presentation/17/">Abstract on conference website</a>. This was a modified version of the <a href="./pycon2019.html">talk I gave at PyCon 2019</a>.</p>
-
-  <h2>Video</h2>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EMkWRlbpJsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  <h2>Slides</h2>
-
-  <div id="speakerdeck-embed-container">
-    <script async class="speakerdeck-embed" data-id="cb6670cd5c5c43b4b22e0e1969ec9aa5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-  </div>
-
-  <h2>Code from the presentation</h2>
-
-  <p>
-    <a href="https://github.com/jonemo/pycon2019-plc-demo">This Github repo</a> contains the PLC projects and Python code used during the presentation, as well as a few files that didn't make the cut due to the time limit.
-    Note that the PLC projects can be edited with the free "Productivity Suite" software (Windows only) which you can download from Automation Direct <a href="https://support.automationdirect.com/products/p3000.html">here</a>.
-    The README files in the repo should contain all the information needed to open the files.
-    To actually run the code, you will need to have a physical PLC.
-  </p>
-
-  <p>Please open an issue in the Github repo if you find an error or have a question!</p>
-
-  <h2>Links from the presentation</h2>
-
-  <h3>PyPI packages mentioned</h3>
-
-  <ul>
-    <li><a href="https://pypi.org/project/pycomm/">pycomm</a></li>
-    <li><a href="https://pypi.org/project/python-snap7/">python-snap7</a></li>
-    <li><a href="https://pypi.org/project/chwiede.pyads/">chwiede.pyads</a></li>
-    <li><a href="https://pypi.org/project/bfabio.pyads/">bfabio.pyads</a></li>
-    <li><a href="https://pypi.org/project/adshli/">adshli</a></li>
-    <li><a href="https://pypi.org/project/pyads/">pyads</a></li>
-    <li><a href="https://pypi.org/project/clickplc/">clickplc</a></li>
-    <li><a href="https://pypi.org/project/df1/">df1</a></li>
-    <li><a href="https://pypi.org/project/pcom/">pcom</a></li>
-    <li><a href="https://pypi.org/project/fatek-fbs-lib/">fatek-fbs-lib</a></li>
-    <li><a href="https://pypi.org/project/pymodbus/">pymodbus</a></li>
-    <li><a href="https://pypi.org/project/pyModbusTCP/">pyModbusTCP</a></li>
-    <li><a href="https://pypi.org/project/MinimalModbus/">MinimalModbus</a></li>
-    <li><a href="https://pypi.org/project/cpppo/">cpppo</a></li>
-    <li><a href="https://github.com/devkid/profinet">devkid/profinet</a> (Github link, no PyPI project)</li>
-    <li><a href="https://pypi.org/project/opcua/">opcua</a> (part of the <a href="https://github.com/FreeOpcUa/">FreeOpcUa project</a>)</li>
-    <li><a href="https://pypi.org/project/asyncua/">asyncua</a> (part of the <a href="https://github.com/FreeOpcUa/">FreeOpcUa project</a>)</li>
-    <li><a href="https://pypi.org/project/opcua-client/">opcua-client</a> (part of the <a href="https://github.com/FreeOpcUa/">FreeOpcUa project</a>)</li>
-    <li><a href="https://pypi.org/project/opcua-webclient/">opcua-webclient</a></li>
-    <li><a href="https://pypi.org/project/pysoem/">pysoem</a></li>
-    <li><a href="https://pypi.org/project/pyprofibus/">pyprofibus</a></li>
-    <li><a href="https://pypi.org/project/canopen/">canopen</a></li>
-    <li><a href="https://pypi.org/project/j1939/">j1939</a></li>
-    <li><a href="https://pypi.org/project/OpenOPC/">OpenOPC</a></li>
-    <li><a href="https://pypi.org/project/rawsocketpy/">rawsocketpy</a></li>
-    <li><a href="https://pypi.org/project/dnet/">dnet</a></li>
-  </ul>
-
-  <h3>Other Assorted Links</h3>
-
-  <ul>
-   <li><a href="http://www.geautomation.com/system/files/files/opc_ua_-_the_information_backbone_wp_gft909_2.pdf">This PDF by GE Automation</a> is a well-written introduction to what OPC-UA standardizes and how it came about to replace its Microsoft-only predecessor. See also the FreeOpcUa project above.</li>
-   <li><a href="https://en.wikipedia.org/wiki/List_of_automation_protocols">List of Automation Protocols</a> on Wikipedia</li>
-   <li><a href="https://en.wikipedia.org/wiki/List_of_PLC_manufacturers">List of PLC Manufacturers</a> on Wikipedia</li>
-   <li><a href="http://jonemo.github.io/neubertify/2019/04/27/list-of-plc-brand-names-and-products/">My spreadsheet of PLC brands and products</a></li>
-   <li><a href="https://en.wikipedia.org/wiki/IEC_61131-3">IEC 61131-3</a> on Wikipedia</li>
-   <li><a href="https://en.wikipedia.org/wiki/IEC_61131">IEC 61131</a> on Wikipedia</li>
-  </ul>
 
   <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
