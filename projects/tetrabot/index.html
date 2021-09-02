@@ -1,100 +1,132 @@
-<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Jonas Neubert">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Jonas Neubert">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
-    <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.svg">
+  <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
+  <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tachyons.css"/>
+  <link rel="stylesheet" href="/css/tufte.css"/>
 
-    <link rel="stylesheet" href="../../css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="../../css/html5-boilerplate-v5.3.0.css">
-    <link rel="stylesheet" href="../../css/main.css">
-
-  <title>Jonas Neubert is a grad student at Cornell building little robots</title>
-  <meta name="viewport" content="width=1040px">
+  <title>Tetrabot: A tetrahedral robot with no external moving parts that uses resonance for locomotion</title>
 </head>
 <body>
+  <div class="flex-l">
 
-  <div id="main" role="main">
-
-    <div id="aboutTheProject2" style="width: 3000px;">
-
-      <div class="tileContainer">
-
-        <img class="tile tileWidth3 tileHeight2" src="../../photos/tetrabot/tetrabot_poster_small.jpg" />
-
-        <div class="tile tileWidth2 tileHeight1 below bgDenim2">
-          <p style="padding:20px">Tetrabot was my research project while visiting the Cornell Computational Synthesis Lab as an undergraduate researcher in summer 2007. It's a robot driven by resonance, a condition usually avoided in engineering.</p>
-        </div>
-
-        <img class="tile tileWidth1 tileHeight1" src="../../photos/tetrabot/tetrabot_detail.jpg" />
-
+    <div class="dn db-l flex-none measure-narrow-l pa3" style="background: #ffe400">
+      <div style="width: 20em;">
       </div>
-
-      <div class="tileContainer">
-
-        <div class="tile tileWidth1 tileHeight1 bgDenim1">
-          <p style="padding:20px">
-            <a href="http://creativemachines.cornell.edu/sites/default/files/IROS2011_Neubert_0.pdf">IROS'10 Paper</a> (pdf)<br />
-            <a href="/photos/tetrabot/tetrabot_poster_large.png">Poster</a> (png)
-          </p>
-        </div>
-
-        <img class="tile tileWidth1 tileHeight1" src="../../photos/tetrabot/tetrabot_dynamixel_closeup.jpg" />
-
-        <div class="tile tileWidth2 tileHeight2 below bgDenim4" style="color:#fff; text-align:center;">
-          <img style="margin-top:2px" src="../../photos/tetrabot/tetrabot_paper_small.jpg" />
-        </div>
-
-      </div>
-
-      <img class="tile tileWidth3 tileHeight3" src="../../photos/tetrabot/on_water.jpg" />
-
-      <img class="tile tileWidth3 tileHeight3" src="../../photos/tetrabot/tetrabot_photo.jpg" />
-
-      <div class="tile tileWidth1 tileHeight1 bgCardinal3">
-        <a href="#" style="margin: 10px auto; width: 70%;">
-          <img src="../../arrow_down.png">
-          Poster</a>
-      </div>
-
-
-
     </div>
 
+    <header class="fixed-l flex-auto measure-narrow-l pa3" style="background: #ffe400">
+      <h1 class="mv0 f2 f1-l fw4 tracked-tight avenir">
+        <a href="/" class="link near-black db-l">Jonas</a>
+        <a href="/" class="link near-black db-l pl2-l">Neubert</a>
+      </h1>
+
+      <p class="f6 pl2 avenir near-black">
+        builds software for laboratories<br>
+        (and other things that involve bits and atoms)
+      </p>
+
+      <nav class="pl1 helvetica">
+        <ul class="list ml0 pl0 mb0 near-black">
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/">About</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/work.html">Projects</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/talks/">Talks</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://blog.jonasneubert.com">Blog</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://twitter.com/jonemo">Twitter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-auto nested-img pl4 pr4 pb4">
+      <article>
+        <h1><span class="bg-black-90 lh-copy white pa1 tracked-tight">Tetrabot</span></h1>
+
+        <p class="subtitle">A tetrahedral robot with no external moving parts that uses resonance for locomotion</p>
+
+        <section>
+
+          <p>
+            Tetrabot was my research project while visiting the Cornell Computational Synthesis Lab as an undergraduate researcher in summer 2007<label for="sn-computational-synthesis-lab" class="margin-toggle sidenote-number"></label>.
+            <input type="checkbox" id="sn-computational-synthesis-lab" class="margin-toggle">
+            <span class="sidenote">Evidently, I enjoyed that summer a lot. I came back a year later and stayed for five full years to work on my PhD in the same lab.</span>
+            It's a robot driven by resonance, a condition usually avoided in engineering.
+          </p>
+
+          <figure>
+            <img
+              src="../../photos/tetrabot/tetrabot_photo.jpg"
+              alt="Front view of the Tetrabot robot in front of white background">
+          </figure>
+
+        </section>
+
+        <section>
+
+          <p>
+            Tetrabot was my first &ldquo;academic&rdquo; research project and one aspect of academia I had zero prior exposure to was publishing papers.
+            After building the robot it took me another two years of follow-on work and writing to get the work accepted at the International Conference on Intelligent Robots and Systems<label for="sn-iros" class="margin-toggle sidenote-number"></label>.
+            <input type="checkbox" id="sn-iros" class="margin-toggle">
+            <span class="sidenote">
+              Amazingly, even the world of academia that is otherwise famous for preserving ancient web content wasn't able to keep the conference website online.
+              As of 2021, <a href="https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros/past-and-future-venues">no website is listed for IROS 2010</a>.
+            </span>
+            Looking back, I am still proud of my first paper even though the magnitude of the scientific work is, well, small.
+            The fact that I flew half-way around the world to Taipei in order to present about it for 15 minutes to as many attendees, however, seems questionable in hindsight.
+          </p>
+
+          <p>
+            <strong>A PDF of the paper is available <a href="http://vigir.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_IROS_2010/data/papers/1551.pdf">here</a>.</strong>
+          </p>
+
+        </section>
+
+        <section>
+
+          <p>
+            The poster (<a href="/photos/tetrabot/tetrabot_poster_large.png">high resolution png</a>) is a quick summary of the six small-font pages of the paper:
+          </p>
+
+          <figure class="fullwidth">
+            <img src="../../photos/tetrabot/tetrabot_poster_small.jpg" />
+          </figure>
+
+        </section>
+
+        <section>
+
+          <figure>
+            <img src="../../photos/tetrabot/tetrabot_detail.jpg" />
+          </figure>
+
+          <figure>
+            <img src="../../photos/tetrabot/tetrabot_dynamixel_closeup.jpg" />
+          </figure>
+
+          <figure>
+            <img src="../../photos/tetrabot/on_water.jpg" />
+          </figure>
+
+        </section>
+
+      </article>
+    </main>
+
   </div>
-
-<div id="projectsiteSidebar">
-  <div id="projectsiteSidebarImage">
-    <img src="../../couch.png" height="88" width="125" alt="">
-  </div>
-
-  <p>Hi, I'm Jonas. I write software for factories and like talking about modular robotics, 3D printing, digital manufacturing, mass customization, 3D&nbsp;for the web, geography, photography, [insert topic&nbsp;here]. You are on <a href="/">my personal website</a>.</p>
-</div>
-  <a id="tilenavLeft" href="#">
-    <div>&nbsp;</div>
-  </a>
-
-  <a id="tilenavRight" href="#" onclick="$.scrollTo('+210px', 800); return false;">
-    <div>&nbsp;</div>
-  </a>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
-<script src="../../js/plugins.js"></script>
-<script src="../../js/main.js"></script>
 
 <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-435125-8','auto');ga('send','pageview');
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-435125-8','auto');ga('send','pageview');
 </script>
 
 </body>
