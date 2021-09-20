@@ -1,68 +1,94 @@
-<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Jonas Neubert">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Jonas Neubert">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
-    <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.svg">
+  <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
+  <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tachyons.css"/>
+  <link rel="stylesheet" href="/css/tufte.css"/>
 
-    <link rel="stylesheet" href="../../css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="../../css/html5-boilerplate-v5.3.0.css">
-    <link rel="stylesheet" href="../../css/main.css">
-
-  <title>World Cup Live App for webOS - A project by Jonas Neubert</title>
-  <meta name="viewport" content="width=1040px">
+  <title>World Cup Live App for webOS — a project by Jonas Neubert</title>
 </head>
 <body>
 
-  <div id="main" role="main">
+  <div class="flex-l">
 
-    <div id="aboutTheProject2" style="width: 4000px;">
-      <h1>World Cup Live App for webOS</h1>
-
-      <img class="tile" src="../../photos/worldcuplivewebos/background.jpg">
-
-      <div class="tileContainer">
-        <div class="tile bgGrey1"><img src="../../photos/worldcuplivewebos/badge_white.png"></div>
-        <div class="tile bgGrey1 below" style="padding: 26px;"><img src="../../photos/worldcuplivewebos/worldcupmanager.png"></div>
+    <div class="dn db-l flex-none measure-narrow-l pa3" style="background: #ffe400">
+      <div style="width: 20em;">
       </div>
-
     </div>
 
+    <header class="fixed-l flex-auto measure-narrow-l pa3" style="background: #ffe400">
+      <h1 class="mv0 f2 f1-l fw4 tracked-tight avenir">
+        <a href="/" class="link near-black db-l">Jonas</a>
+        <a href="/" class="link near-black db-l pl2-l">Neubert</a>
+      </h1>
+
+      <p class="f6 pl2 avenir near-black">
+        builds software for laboratories<br>
+        (and other things that involve bits and atoms)
+      </p>
+
+      <nav class="pl1 helvetica">
+        <ul class="list ml0 pl0 mb0 near-black">
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/">About</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/work.html">Projects</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/talks/">Talks</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://blog.jonasneubert.com">Blog</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://twitter.com/jonemo">Twitter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-auto nested-img pl4 pr4 pb4">
+      <article>
+
+        <h1><span class="bg-black-90 lh-copy white pa1 tracked-tight">World Cup Live App for webOS</span></h1>
+
+        <p class="subtitle">Soccer world cup app with live-ish scores for Palm Pre users</p>
+
+        
+  <section>
+    <p>
+      At roughly the same time as when we made the <a href="../calculatorswebos">calculator app for webOS</a> there was a soccer world cup happening.
+      As owners of one of the first amazing but ultimately ill-fated Palm Pre devices, <a href="http://www.corneliascheitz.com">Conny</a> and I thought to ourselves:
+      &ldquo;We already made a calculator app, how much harder could a live score app for a major international sports event be!?&rdquo;
+    </p>
+
+    <p>
+      Long story short, we figured out a way to build the only 2010 World Cup live score app for webOS on a shoe-string budget.
+      The most memorable moment of this ridiculous project was when the server went down during a game and one of the co-founders of Palm emailed us asking if we need any help with getting things working again.
+    </p>
+
+    <figure class="fullwidth">
+      <img src="../../photos/worldcuplivewebos/worldcupmanager.png">
+    </figure>
+
+    <p>
+      The app was free but we ended up winning a small prize in the &ldquo;Palm webOS Hot Apps Competition&rdquo;
+      (one of the ways in which Palm tried to drum up developer interest in their attempt to compete with Apple and Google on app store selection).
+      <!-- <img src="../../photos/worldcuplivewebos/badge_white.png"> -->
+    </p>
+
+  </section>
+
+      </article>
+    </main>
   </div>
 
-<div id="projectsiteSidebar">
-  <div id="projectsiteSidebarImage">
-    <img src="../../couch.png" height="88" width="125" alt="">
-  </div>
-
-  <p>Hi, I'm Jonas. I write software for factories and like talking about modular robotics, 3D printing, digital manufacturing, mass customization, 3D&nbsp;for the web, geography, photography, [insert topic&nbsp;here]. You are on <a href="/">my personal website</a>.</p>
-</div>
-  <a id="tilenavLeft" href="#">
-    <div>&nbsp;</div>
-  </a>
-
-  <a id="tilenavRight" href="#" onclick="$.scrollTo('+210px', 800); return false;">
-    <div>&nbsp;</div>
-  </a>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
-<script src="../../js/plugins.js"></script>
-<script src="../../js/main.js"></script>
-
-<script>
+  <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
     function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
     e=o.createElement(i);r=o.getElementsByTagName(i)[0];
     e.src='//www.google-analytics.com/analytics.js';
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-435125-8','auto');ga('send','pageview');
-</script>
+  </script>
 
 </body>
 </html>
