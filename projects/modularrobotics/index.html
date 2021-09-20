@@ -1,63 +1,162 @@
-<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Jonas Neubert">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Jonas Neubert">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
-    <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.svg">
+  <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
+  <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tachyons.css"/>
+  <link rel="stylesheet" href="/css/tufte.css"/>
 
-    <link rel="stylesheet" href="../../css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="../../css/html5-boilerplate-v5.3.0.css">
-    <link rel="stylesheet" href="../../css/main.css">
-
-  <title>Jonas Neubert is a grad student at Cornell building little robots</title>
-  <meta name="viewport" content="width=1040px">
+  <title>Reconfigurable Modular Robotics — a project by Jonas Neubert</title>
 </head>
 <body>
 
-  <div id="main" role="main">
+  <div class="flex-l">
 
-    <div id="aboutTheProject2" style="width: 1000px;">
-      <div class="tile tileWidth4 tileHeight1 text bgGrey1">
-        <p>My current research project (which will also be the center of my PhD thesis) is in the area of modular robotics. Our goal with this project is to make a modular machine exhibit behaviors equivalent to certain biological processes.</p>
-
-        <p>This page will be updated with more content as soon as a first publication on the project appears. Until then you might be interested in reading about my work on <a href="http://jonasneubert.com/projects/selfassembly">Modular Self-Assembly</a>.</p>
+    <div class="dn db-l flex-none measure-narrow-l pa3" style="background: #ffe400">
+      <div style="width: 20em;">
       </div>
     </div>
 
+    <header class="fixed-l flex-auto measure-narrow-l pa3" style="background: #ffe400">
+      <h1 class="mv0 f2 f1-l fw4 tracked-tight avenir">
+        <a href="/" class="link near-black db-l">Jonas</a>
+        <a href="/" class="link near-black db-l pl2-l">Neubert</a>
+      </h1>
+
+      <p class="f6 pl2 avenir near-black">
+        builds software for laboratories<br>
+        (and other things that involve bits and atoms)
+      </p>
+
+      <nav class="pl1 helvetica">
+        <ul class="list ml0 pl0 mb0 near-black">
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/">About</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/work.html">Projects</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/talks/">Talks</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://blog.jonasneubert.com">Blog</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://twitter.com/jonemo">Twitter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-auto nested-img pl4 pr4 pb4">
+      <article>
+
+        <h1><span class="bg-black-90 lh-copy white pa1 tracked-tight">Reconfigurable Modular Robotics</span></h1>
+
+        <p class="subtitle">Little robots that solder themselves to each other</p>
+
+        
+
+  <section>
+
+    <figure class="fullwidth">
+      <img src="images/soldercubes-assemblies.jpg">
+    </figure>
+
+    <p>
+      For the graduate school thesis work I set out to demonstrate complex &ldquo;ecosystem&rdquo; behaviors with large numbers of custom-made modular robots.
+      However, I quickly realized the challenges of building the fleet of approximately 40 little robots and then maintaining them to be reliable enough to not randomly fail during demos.
+      As a result, I quickly pivoted towards developing a module design for reconfigurable modular robots that was radically simpler and cheaper than prior projects in the academic literally.
+      The focus of this work was on the connection mechanism which was the main driver of cost, BOM size, and complexity.
+    </p>
+
+  </section>
+
+  <section>
+    <p>
+      This work ultimately found its way into two academic papers.
+    </p>
+
+    <p>
+      The first one covers exclusively the connector:
+      <u>Neubert, J.</u>, Rost, A., Lipson, H. (2014)
+      &ldquo;<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6888504">Self-Soldering Connectors for Modular Robots</a>&rdquo;,
+      <strong>IEEE Transactions on Robotics</strong>,
+      vol. 30, pp. 1344-1357
+    </p>
+
+    <blockquote>
+      <p>
+        The connection mechanism between neighboring
+        modules is the most critical sub-system of each module in a
+        modular robot. Here we describe a strong, lightweight, solid state
+        connection method based on heating a low melting point alloy to
+        form reversible soldered connections. No external manipulation
+        is required for forming or breaking connections between adja-
+        cent connectors, making this method suitable for reconfigurable
+        systems such as self-reconfiguring modular robots. Energy is
+        only consumed when switching connectivity, and the ability to
+        transfer power and signal through the connector is inherent to the
+        method. Soldering connectors have no moving parts, are orders of
+        magnitude lighter than other connectors, and are readily mass
+        manufacturable. The mechanical strength of the connector is
+        measured as 173N, enough to support many robot modules, and
+        hundreds of connection cycles are performed before failure.
+      </p>
+    </blockquote>
+
+    <p>
+      The second one covers the design of the complete robot module:
+      <u>Neubert, J.</u>, Lipson, H. (2016)
+      &ldquo;<a href="http://link.springer.com/article/10.1007/s10514-015-9441-4">Soldercubes: A&nbsp;Self-soldering Self-reconfiguring Modular Robot System</a>&rdquo;,
+      <strong>Autonomous Robots</strong>,
+      vol. 40, pp. 139-158
+    </p>
+
+    <blockquote>
+      <p>
+        Soldercubes are a self-reconfiguring modular robot (MR) system whose modules are light weight, low cost, and designed with manufacturability for large batch production in mind.
+        The frequently cited promises of modular robotics—versatility, robustness, and low cost—assume the availability of large numbers of modules.
+        However, modules in most MR prototypes are large, mechanically complex, expensive, and difficult to manufacture.
+        Soldercubes partially overcome this contradiction through optimizing some components for volume manufacturing processes.
+        With the integration of a soldering connector which weighs only 2 g and has no moving parts, Soldercubes are among the cheapest, lightest and smallest among comparable self-reconfiguring MR systems.
+        This paper describes the Soldercube module design in detail, reports on experiments in a lattice configuration, explores non-lattice applications of the system, and discusses the effects of utilising volume manufacturing processes in module production.
+        All Soldercubes design files are released as open source hardware.
+      </p>
+    </blockquote>
+  </section>
+
+  <section>
+    <p>
+      As stated in the abstract on the second paper, the hardware and software design files for the Soldercube modules are available under an open source license.
+      This remains true today but you need to know where to look because the official project website was unceremoniously deleted when my grad school lab at Cornell closed down.
+      Here are the Github repos:
+    </p>
+
+    <ul>
+      <li><a href="https://github.com/jonemo/soldercubes"><code>soldercubes</code></a> contains the hardware designs in Solidworks format</li>
+      <li><a href="https://github.com/jonemo/soldercubes-controller"><code>soldercubes-controller</code></a> contains the embedded C code for the Atmel controllers inside each module</li>
+      <li><a href="https://github.com/jonemo/soldercubes-electricimp"><code>soldercubes-electricimp</code> contains the code written during a small tangent where I used the <a href="https://www.electricimp.com">electric imp</a> IoT platform to make my robots &ldquo;cloud-controllable&rdquo;.</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <figure>
+      <img src="images/soldercubes-motor-partially-assembled.jpg">
+    </figure>
+  </section>
+
+
+
+      </article>
+    </main>
   </div>
 
-<div id="projectsiteSidebar">
-  <div id="projectsiteSidebarImage">
-    <img src="../../couch.png" height="88" width="125" alt="">
-  </div>
-
-  <p>Hi, I'm Jonas. I write software for factories and like talking about modular robotics, 3D printing, digital manufacturing, mass customization, 3D&nbsp;for the web, geography, photography, [insert topic&nbsp;here]. You are on <a href="/">my personal website</a>.</p>
-</div>
-  <a id="tilenavLeft" href="#">
-    <div>&nbsp;</div>
-  </a>
-
-  <a id="tilenavRight" href="#" onclick="$.scrollTo('+210px', 800); return false;">
-    <div>&nbsp;</div>
-  </a>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
-<script src="../../js/plugins.js"></script>
-<script src="../../js/main.js"></script>
-
-<script>
+  <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
     function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
     e=o.createElement(i);r=o.getElementsByTagName(i)[0];
     e.src='//www.google-analytics.com/analytics.js';
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-435125-8','auto');ga('send','pageview');
-</script>
+  </script>
+
 </body>
 </html>
