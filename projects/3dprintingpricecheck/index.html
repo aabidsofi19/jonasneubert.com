@@ -1,70 +1,96 @@
-<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Jonas Neubert">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Jonas Neubert">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
-    <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.svg">
+  <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
+  <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tachyons.css"/>
+  <link rel="stylesheet" href="/css/tufte.css"/>
 
-    <link rel="stylesheet" href="../../css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="../../css/html5-boilerplate-v5.3.0.css">
-    <link rel="stylesheet" href="../../css/main.css">
-
-  <title>3dPrintingPricecheck.com - A project by Jonas Neubert</title>
-  <meta name="viewport" content="width=1040px">
+  <title>3dPrintingPricecheck.com — a project by Jonas Neubert</title>
 </head>
 <body>
 
-  <div id="main" role="main">
+  <div class="flex-l">
 
-    <div id="aboutTheProject2" style="width: 2000px;">
-
-      <img class="tile tileWidth1 tileHeight3" src="../../photos/3dprintingpricecheck/screenshot_superlong.jpg" />
-
-      <div class="tile tileWidth2 tileHeight3 text bgGrey1">
-
-        <p>Please excuse the emptiness while I am procrastinating about how to best fill this page.</p>
-
-        <p>You are welcome to email me at jn@jonasneubert.com with any questions about my projects, or just to say hello.</p>
-
+    <div class="dn db-l flex-none measure-narrow-l pa3" style="background: #ffe400">
+      <div style="width: 20em;">
       </div>
-
     </div>
 
+    <header class="fixed-l flex-auto measure-narrow-l pa3" style="background: #ffe400">
+      <h1 class="mv0 f2 f1-l fw4 tracked-tight avenir">
+        <a href="/" class="link near-black db-l">Jonas</a>
+        <a href="/" class="link near-black db-l pl2-l">Neubert</a>
+      </h1>
+
+      <p class="f6 pl2 avenir near-black">
+        builds software for laboratories<br>
+        (and other things that involve bits and atoms)
+      </p>
+
+      <nav class="pl1 helvetica">
+        <ul class="list ml0 pl0 mb0 near-black">
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/">About</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/work.html">Projects</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/talks/">Talks</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://blog.jonasneubert.com">Blog</a></li>
+          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://twitter.com/jonemo">Twitter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-auto nested-img pl4 pr4 pb4">
+      <article>
+
+        <h1><span class="bg-black-90 lh-copy white pa1 tracked-tight">3dPrintingPricecheck.com</span></h1>
+
+        <p class="subtitle">kayak.com for 3d printing services</p>
+
+        
+  <section>
+
+    <p>
+      3dprintingpricecheck.com was a website for comparing prices between several 3D printing services including Shapeways, iMaterialize, Sculpteo, &hellip;
+      Users would &ldquo;upload&rdquo; an STL file by dragging it into the page.
+      Javascript would analyze the file in the browser (without ever sending it to a server) to extract pricing-relevant properties.
+      Finally, the prices for each services would be determined and displayed for a wide library of materials als finishes.
+      While some of the services had a pricing API, most did not and the prices were estimates based on my reverse engineering of their pricing formulas.
+    </p>
+
+    <p>
+      The site was up for several years and, at one time, included localized versions for both German and Korean visitors.
+      I took it offline in 2020 when the hype around 3D printing had long abated, many of the services covered had disappeared, and the others had become a lot more transparent about their pricing.
+      Maybe this project played a small role in causing that latter part.
+    </p>
+
+    <p>
+      One day I will write a more complete history of this project, until then I'll fill this space with an absurdly long screenshot of a results page taken from 3dprintingpricecheck.com.
+    </p>
+
+    <figure>
+      <img src="screenshot_superlong.jpg">
+    </figure>
+
+  </section>
+
+      </article>
+    </main>
   </div>
 
-<div id="projectsiteSidebar">
-  <div id="projectsiteSidebarImage">
-    <img src="../../couch.png" height="88" width="125" alt="">
-  </div>
-
-  <p>Hi, I'm Jonas. I write software for factories and like talking about modular robotics, 3D printing, digital manufacturing, mass customization, 3D&nbsp;for the web, geography, photography, [insert topic&nbsp;here]. You are on <a href="/">my personal website</a>.</p>
-</div>
-  <a id="tilenavLeft" href="#">
-    <div>&nbsp;</div>
-  </a>
-
-  <a id="tilenavRight" href="#" onclick="$.scrollTo('+210px', 800); return false;">
-    <div>&nbsp;</div>
-  </a>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
-<script src="../../js/plugins.js"></script>
-<script src="../../js/main.js"></script>
-
-<script>
+  <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
     function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
     e=o.createElement(i);r=o.getElementsByTagName(i)[0];
     e.src='//www.google-analytics.com/analytics.js';
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-435125-8','auto');ga('send','pageview');
-</script>
+  </script>
 
 </body>
 </html>
