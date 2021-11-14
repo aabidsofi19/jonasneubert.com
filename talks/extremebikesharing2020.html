@@ -9,59 +9,52 @@
   <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
   <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
-  <link href="//fonts.googleapis.com/css?family=Quicksand:300,500|Poiret+One|Cutive+Mono" rel="stylesheet">
-  <link rel="stylesheet" href="/css/tachyons.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.css"/>
   <link rel="stylesheet" href="/css/tufte.css"/>
+  <link rel="stylesheet" href="/css/main.css"/>
 
   <style>
-    #speakerdeck-embed-container {
-      max-width: 40em;
-    }
-
-    main {
-      background: white;
+    html {
       font-family: Quicksand, "Century Gothic", AppleGothic, sans-serif;
-      font-size:15px;
       letter-spacing: 0.04em;  /* bring back spacing from pre-Google fonts version of Quicksand */
-      line-height:1.6em;
       font-weight:300;
     }
   </style>
 
   <title>Extreme Bikesharing - Meetup Presentation 2020 - Jonas Neubert</title>
 </head>
+
 <body>
-  <div class="flex-l">
 
-    <div class="dn db-l flex-none measure-narrow-l pa3" style="background: #ffe400">
-      <div style="width: 20em;">
-      </div>
-    </div>
+  <div class="min-h-screen flex flex-col overflow-x-hidden md:container md:flex-row">
 
-    <header class="fixed-l flex-auto measure-narrow-l pa3" style="background: #ffe400">
-      <h1 class="mv0 f2 f1-l fw4 tracked-tight avenir">
-        <a href="/" class="link near-black db-l">Jonas</a>
-        <a href="/" class="link near-black db-l pl2-l">Neubert</a>
+    <header class="flex-none px-4 md:w-72 md:space-y-4" style="background: #ffe400">
+
+      <h1 class="pt-4 font-light text-6xl font-sans">
+        Jonas Neubert
       </h1>
 
-      <p class="f6 pl2 avenir near-black">
-        builds software for laboratories<br>
-        (and other things that involve bits and atoms)
+      <p class="text-sm font-medium text-black md:ml-6">
+        &hellip; works with bits and atoms
       </p>
 
-      <nav class="pl1 helvetica">
-        <ul class="list ml0 pl0 mb0 near-black">
-          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/">About</a></li>
-          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/work.html">Projects</a></li>
-          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="/talks/">Talks</a></li>
-          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://blog.jonasneubert.com">Blog</a></li>
-          <li class="dib db-l mr3"><a class="link near-black dib pa1-l fw5 f4-ns hover-bg-dark-red" href="https://twitter.com/jonemo">Twitter</a></li>
+
+      <nav class="tracking-tighter text-2xl font-semibold text-black md:ml-4">
+        <ul class="flex flex-row space-x-1 md:flex-col md:space-x-0">
+          <li class="flex-initial block mr-3"><a class="inline-block py-1 px-2 hover:text-white hover:bg-red-600" href="/">About</a></li>
+          <li class="flex-initial block mr-3"><a class="inline-block py-1 px-2 hover:text-white hover:bg-red-600" href="/work.html">Projects</a></li>
+          <li class="flex-initial block mr-3"><a class="inline-block py-1 px-2 hover:text-white hover:bg-red-600" href="/talks/">Talks</a></li>
+          <li class="flex-initial block mr-3"><a class="inline-block py-1 px-2 hover:text-white hover:bg-red-600" href="https://blog.jonasneubert.com">Blog</a></li>
+          <li class="flex-initial block mr-3"><a class="inline-block py-1 px-2 hover:text-white hover:bg-red-600" href="https://twitter.com/jonemo">Twitter</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="flex-auto nested-img pl4 pr4 pb4">
+    <main class="flex-auto px-8">
       
+      <article>
+        
       <h1>Extreme Bikesharing: How I used Python to plan an epic Ford GoBike trip</h1>
 
       <p>Presented at <a href="https://www.meetup.com/sfpython/events/xkwxvqybccblb/">SF Python Talk Night on Jan 8, 2020</a> and at <a href="https://www.meetup.com/Full-Stack-Development-Meetup-Group/events/267022346/">Full Stack Developer Meetup on Jan 14, 2020</a>.</p>
@@ -97,6 +90,8 @@
         <li><a href="">ortools</a></li>
         <li><a href="">mapbox</a> (unmaintained as of 2019)</li>
       </ul>
+
+      </article>
 
     </main>
   </div>

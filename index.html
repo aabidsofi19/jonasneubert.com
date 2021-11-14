@@ -1,235 +1,333 @@
-<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Jonas Neubert">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Jonas Neubert">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
-    <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.svg">
+  <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
+  <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
-    <link href="//fonts.googleapis.com/css?family=Quicksand:300,500|Poiret+One|Cutive+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.css"/>
+  <link rel="stylesheet" href="/css/tufte.css"/>
+  <link rel="stylesheet" href="/css/main.css"/>
 
-    <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="/css/html5-boilerplate-v5.3.0.css">
-    <link rel="stylesheet" href="/css/main.css">
+  <style>
+    html {
+      font-family: Quicksand, "Century Gothic", AppleGothic, sans-serif;
+      letter-spacing: 0.04em;  /* bring back spacing from pre-Google fonts version of Quicksand */
+      font-weight:300;
+    }
+  </style>
 
-    <title>Jonas Neubert is an automation engineer, modular roboticist, and 3d printing aficionado</title>
+  <title>Jonas Neubert</title>
 </head>
+
 <body>
 
-    <div id="livingroom" class="row clearfix">
+  <div class="min-h-screen flex flex-col overflow-x-hidden md:container md:flex-row">
 
-        <div id="couchcorner"><div>
-            <div id="mynameisjonas">
-                <p>My name is Jonas</p>
-            </div>
-            <img id="speakingbubble1" src="speakingbubble.png" width="20" height="10">
-            <img id="couch" src="couch.png" height="264" width="376" alt="">
-        </div></div>
+    <header class="flex-none px-4 md:w-72 md:space-y-4" style="background: #ffe400">
+      <!--
+      <h1 class="py-4">
+        <a href="/">
+          <img src="/jonasneubert.svg" alt="Jonas Neubert" style="width: 15rem; max-width: 15rem">
+        </a>
+      </h1>
+      -->
 
-        <div id="aboutjonas"><div>
-            <p>Hi, I'm Jonas.</p>
+      <h1 class="pt-4 font-light text-6xl font-sans">
+        Jonas Neubert
+      </h1>
 
-            <p>I&nbsp;am automation engineer and software developer. Put differently: I&nbsp;like bits and atoms equally. I&nbsp;enjoy working on multi-disciplinary projects that are more complex than complicated, which I&nbsp;currently do at&nbsp;<a href="https://www.zymergen.com">Zymergen</a>.</p>
-
-            <p>Previously, I&nbsp;helped build the world's most advanced genomics lab at&nbsp;<a href="http://counsyl.com">Counsyl</a> and was graduate student in Hod&nbsp;Lipson's <a class="bubble" href="http://creativemachines.cornell.edu">Creative Machines Lab</a> at Cornell&nbsp;University where I&nbsp;worked on <a href="http://creativemachines.cornell.edu/sites/default/files/Neubert_Self-soldering_connectors_for_modular_robots.pdf">modular&nbsp;robotics</a> and <a href="http://creativemachines.cornell.edu/stochastic-modular-assembly">programmable&nbsp;matter</a>. I&nbsp;have also been involved in <a href="http://www.igniteithaca.com/">Ignite&nbsp;Ithaca</a>, <a href="http://itunes.apple.com/us/app/cardsender/id351474734?mt=8">a&nbsp;postcards&nbsp;thing</a>, <a href="http://www.nestoria.com">a&nbsp;property search engine</a>, <a href="http://en.wikipedia.org/wiki/Corus">a&nbsp;steel&nbsp;factory</a>, <a href="http://union.ic.ac.uk/arts/cinema/">a&nbsp;cinema</a>, and <a href="http://cpep.cornell.edu/">a&nbsp;prison teaching&nbsp;program</a>.</p>
-
-            <p>Before moving to the New World, I&nbsp;completed an M.Eng. (my undergrad degree) at&nbsp;<a href="https://en.wikipedia.org/wiki/Imperial_College_London">Imperial College London</a>. Even further in the past, I&nbsp;was born and raised in the country famous for <a href="http://en.wikipedia.org/wiki/German_Autobahnen#Speed_limits">no&nbsp;speed&nbsp;limits</a> and <a href="http://en.wikipedia.org/wiki/German_humor">no&nbsp;humor</a>.</p>
-
-            <p style="font-size:smaller">
-                <span class="highlighter">Elsewhere online:</span><br>
-                <a href="https://twitter.com/jonemo">Twitter</a>,
-                <a href="https://www.linkedin.com/in/jonasneubert">LinkedIn</a>,
-                <a href="https://github.com/jonemo/">Github</a>,
-                <a href="https://scholar.google.com/citations?user=4NpKk9MAAAAJ">Google Scholar</a>,
-                <a href="#did-you-really-think-i-have-a-link-to-geocities-here?">Geocities</a>,
-                <a href="https://500px.com/jncj">500px</a>
-            </p>
-        </div></div>
-
-    </div>
-
-    <div id="navbar" class="row clearfix">
-        <a href="/work.html">Work</a>
-        <a href="/talks/">Talks</a>
-        <a href="https://blog.jonasneubert.com/">Blog</a>
-    </div>
+      <p class="text-sm font-medium text-black md:ml-6">
+        &hellip; works with bits and atoms
+      </p>
 
 
-    <div class="row clearfix">
-
-        <div class="section-wrapper">
-            <h1>Blog</h1>
-        </div>
-
-        <div class="text-block">
-
-            <p>Every now and then I write a few lines (or a few pages) and publish the result as a blog post. Below are the five most recent posts. The complete archive back to 2011 is <a href="https://blog.jonasneubert.com/">here</a>.</p>
-
-        </div>
-
-        <ul class="text-block">
-            <li><span>April 27, 2019</span> &mdash; <a href="http://jonemo.github.io/neubertify/2019/04/27/list-of-plc-brand-names-and-products/">List of PLC brands and products</a></li>
-            <li><span>March 22, 2019</span> &mdash; <a href="https://blog.jonasneubert.com/2019/03/22/my-us-travel-map/">My US Travel Map</a></li>
-            <li><span>January 23, 2019</span> &mdash; <a href="https://blog.jonasneubert.com/2019/01/23/barcode-generation-python/">The Best Python Packages for Generating Barcodes</a></li>
-            <li><span>November 20, 2017</span> &mdash; <a href="https://blog.jonasneubert.com/2017/11/20/the-pycon-speaker-experience/">The PyCon Speaker Experience (is phenomenal)</a></li>
-            <li><span>September 13, 2017</span> &mdash; <a href="https://blog.jonasneubert.com/2017/09/13/publishing-your-first-pypi-package/">Publishing your First PyPI Package by/for the Absolute Beginner</a></li>
-            <li><span>June 10, 2017</span> &mdash; <a href="https://blog.jonasneubert.com/2017/06/10/pycon-2017-video/">PyCon 2017 Talk</a></li>
+      <nav class="tracking-tighter text-2xl font-semibold text-black md:ml-4">
+        <ul class="flex flex-row space-x-1 md:flex-col md:space-x-0">
+          <li class="flex-initial block mr-3"><a class="inline-block py-1 px-2 hover:text-white hover:bg-red-600" href="/">About</a></li>
+          <li class="flex-initial block mr-3"><a class="inline-block py-1 px-2 hover:text-white hover:bg-red-600" href="/work.html">Projects</a></li>
+          <li class="flex-initial block mr-3"><a class="inline-block py-1 px-2 hover:text-white hover:bg-red-600" href="/talks/">Talks</a></li>
+          <li class="flex-initial block mr-3"><a class="inline-block py-1 px-2 hover:text-white hover:bg-red-600" href="https://blog.jonasneubert.com">Blog</a></li>
+          <li class="flex-initial block mr-3"><a class="inline-block py-1 px-2 hover:text-white hover:bg-red-600" href="https://twitter.com/jonemo">Twitter</a></li>
         </ul>
+      </nav>
+    </header>
 
-        <div class="text-block">
-            <a href="https://blog.jonasneubert.com/">Blog Archive</a>
-        </div>
+    <main class="flex-auto px-8">
+      
+  <style>
+    /* additional styles apply for screen widths over 852px, see below */
+
+    main {
+        background: white url('../bg.jpg');
+    }
+    #couchcorner {
+        position: relative;
+        height: 376px;
+        width: 376px;
+        margin: auto;
+    }
+    #mynameisjonas {
+        position: absolute;
+        bottom: 283px;
+        left: 41px;
+        width: 320px;
+        height: 32px;
+        overflow: hidden;
+        text-align: right;
+        background-color: #000;
+        padding: 5px;
+    }
+
+    #mynameisjonas>p {
+        margin: 0;
+        color: #fff;
+        font-family: 'Cutive Mono', monospace;
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    #mynameisjonas>p::after {
+        content: "↵";
+        font-size: 0.5rem;
+    }
+
+    #speakingbubble1 {
+        position: absolute;
+        bottom: 273px;
+        left: 291px;
+    }
+
+    #couch {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 376px;
+        max-width: 100%;
+    }
+
+
+    @media screen and (min-width: 852px) {
+        #couchcorner>div {
+            margin: 0; /* override margin:auto from default layout */
+        }
+        #aboutjonas {
+            float: left;
+            max-width: 42vw; /* don't get closer than 5% screen width of center line */
+        }
+        #aboutjonas>div {
+            width: 100%;
+            max-width: 520px;
+            margin: 13.5% 0 0 15%;
+        }
+    }
+
+    #polaroids {background-color: #ffe400}
+    #credits {font-size: 0.8em; padding: 150px 0 150px 0; text-align:center}
+
+    /* polaroid photos, source: http://www.zurb.com/playground/css3-polaroids */
+    ul.polaroids { margin: 70px auto 70px auto; list-style: none outside; }
+    ul.polaroids li { display: inline; }
+    ul.polaroids a { background: white; display: inline; float: left; margin: 0 0 27px 30px; width: auto; padding: 10px 10px 15px; text-align: center; font-family: "Marker Felt", sans-serif; text-decoration: none; color: #333; font-size: 18px; -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25); -webkit-transform: rotate(-2deg); -webkit-transition: -webkit-transform .15s linear; -moz-transform: rotate(-2deg); }
+    ul.polaroids img { display: block; width: 190px; margin-bottom: 12px; }
+    #polaroids ul.polaroids li a:after { content: attr(title); }
+    /* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
+    #polaroids ul.polaroids li a:hover { -webkit-transform: scale(1.5); -moz-transform: scale(1.5); position: relative; z-index: 5; }
+    /* Rotate all even images 2 degrees */
+    ul.polaroids li:nth-child(even) a { -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); }
+    /* Don't rotate every third image, but offset its position */
+    ul.polaroids li:nth-child(3n) a { -webkit-transform: none; -moz-transform: none; position: relative; top: -5px; }
+    /* Rotate every fifth image by 5 degrees and offset it */
+    ul.polaroids li:nth-child(5n) a { -webkit-transform: rotate(5deg); -moz-transform: rotate(5deg); position: relative; right: 5px; }
+    /* Keep default rotate for every eighth, but offset it */
+    ul.polaroids li:nth-child(8n) a { position: relative; top: 8px; right: 5px; }
+    /* Keep default rotate for every eleventh, but offset it */
+    ul.polaroids li:nth-child(11n) a { position: relative; top: 3px; left: -5px; }
+  </style>
+
+
+  <div id="couchcorner">
+    <div id="mynameisjonas">
+      <p>My name is Jonas</p>
+    </div>
+    <img id="speakingbubble1" src="speakingbubble.png" width="20" height="10">
+    <img id="couch" src="couch.png" height="264" width="376" alt="">
+  </div>
+
+
+  <div id="aboutjonas">
+    <div>
+      <p>Hi, I'm Jonas.</p>
+
+      <p>I&nbsp;am automation engineer and software developer. Put differently: I&nbsp;like bits and atoms equally. I&nbsp;enjoy working on multi-disciplinary projects that are more complex than complicated, which I&nbsp;currently do at&nbsp;<a href="https://www.zymergen.com">Zymergen</a>.</p>
+
+      <p>Previously, I&nbsp;helped build the world's most advanced genomics lab at&nbsp;<a href="http://counsyl.com">Counsyl</a> and was graduate student in Hod&nbsp;Lipson's <a class="bubble" href="http://creativemachines.cornell.edu">Creative Machines Lab</a> at Cornell&nbsp;University where I&nbsp;worked on <a href="http://creativemachines.cornell.edu/sites/default/files/Neubert_Self-soldering_connectors_for_modular_robots.pdf">modular&nbsp;robotics</a> and <a href="http://creativemachines.cornell.edu/stochastic-modular-assembly">programmable&nbsp;matter</a>. I&nbsp;have also been involved in <a href="http://www.igniteithaca.com/">Ignite&nbsp;Ithaca</a>, <a href="http://itunes.apple.com/us/app/cardsender/id351474734?mt=8">a&nbsp;postcards&nbsp;thing</a>, <a href="http://www.nestoria.com">a&nbsp;property search engine</a>, <a href="http://en.wikipedia.org/wiki/Corus">a&nbsp;steel&nbsp;factory</a>, <a href="http://union.ic.ac.uk/arts/cinema/">a&nbsp;cinema</a>, and <a href="http://cpep.cornell.edu/">a&nbsp;prison teaching&nbsp;program</a>.</p>
+
+      <p>Before moving to the New World, I&nbsp;completed an M.Eng. (my undergrad degree) at&nbsp;<a href="https://en.wikipedia.org/wiki/Imperial_College_London">Imperial College London</a>. Even further in the past, I&nbsp;was born and raised in the country famous for <a href="http://en.wikipedia.org/wiki/German_Autobahnen#Speed_limits">no&nbsp;speed&nbsp;limits</a> and <a href="http://en.wikipedia.org/wiki/German_humor">no&nbsp;humor</a>.</p>
+
+      <p style="font-size:smaller">
+        <span class="highlighter">Elsewhere online:</span><br>
+        <a href="https://twitter.com/jonemo">Twitter</a>,
+        <a href="https://www.linkedin.com/in/jonasneubert">LinkedIn</a>,
+        <a href="https://github.com/jonemo/">Github</a>,
+        <a href="https://scholar.google.com/citations?user=4NpKk9MAAAAJ">Google Scholar</a>,
+        <a href="#did-you-really-think-i-have-a-link-to-geocities-here?">Geocities</a>,
+        <a href="https://500px.com/jncj">500px</a>
+      </p>
+    </div>
+  </div>
+
+  <!--
+  <br clear="both">
+
+  <div id="polaroids" class="row">
+
+    <div class="section-wrapper" style="margin-top:30px">
+      <h1>Photos</h1>
+    </div>
+
+    <div class="text-block">
+
+      <p>I have interest (but little talent) in photography and recently started uploading some of my favorites to <a href="https://500px.com/jncj">500px</a>. During the 2006/7 academic year I participated in the <a href="http://citydailyphoto.org/">City Daily Photo</a> movement with <a href="http://jonemo.de/thedailylondonphoto/2007_06_01_archive.html">The Daily London Photo</a>.</p>
+
+      <p>Below is the section of my website with photos of yours truly. You call that narcissistic, I call it practical because this is my go-to collection when faced with an app that requires a profile photo during signup.</p>
 
     </div>
 
     <br clear="both">
 
-    <div id="polaroids" class="row">
+    <ul class="polaroids clearfix">
+      <li>
+        <a href="photos/me/SSA48469_500.jpg" >
+          <img src="photos/me/SSA48469_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/DSC_1188_500.jpg" >
+          <img src="photos/me/DSC_1188_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/IMG_0583_500.jpg" >
+          <img src="photos/me/IMG_0583_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/SDC14625_500.jpg" >
+          <img src="photos/me/SDC14625_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/DSC_1309_500.jpg" >
+          <img src="photos/me/DSC_1309_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/IMG_1536_500.jpg" >
+          <img src="photos/me/IMG_1536_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/IMG_5311_500.jpg" >
+          <img src="photos/me/IMG_5311_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/IMG_5307_500.jpg" >
+          <img src="photos/me/IMG_5307_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/IMG_1366_500.jpg" >
+          <img src="photos/me/IMG_1366_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/DSC_1213_500.jpg" >
+          <img src="photos/me/DSC_1213_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/BUPA_run_500.jpg">
+          <img src="photos/me/BUPA_run_500.jpg">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/IMG_1359_500.jpg" >
+          <img src="photos/me/IMG_1359_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/IMG_1499_500.jpg" >
+          <img src="photos/me/IMG_1499_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/SDC10270_500.jpg" >
+          <img src="photos/me/SDC10270_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/IMG_1444_500.jpg" >
+          <img src="photos/me/IMG_1444_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/SDC14499_500.jpg" >
+          <img src="photos/me/SDC14499_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/IMG_1742_500.jpg" >
+          <img src="photos/me/IMG_1742_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/DSC_1217_500.jpg" >
+          <img src="photos/me/DSC_1217_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/SDC14616_500.jpg" >
+          <img src="photos/me/SDC14616_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/SDC14810_500.jpg" >
+          <img src="photos/me/SDC14810_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/SDC14581_500.jpg" >
+          <img src="photos/me/SDC14581_500.jpg" alt=" ">
+        </a>
+      </li>
+      <li>
+        <a href="photos/me/DSC_1306_500.jpg" >
+          <img src="photos/me/DSC_1306_500.jpg" alt=" ">
+        </a>
+      </li>
+    </ul>
+  </div>
+  -->
 
-        <div class="section-wrapper" style="margin-top:30px">
-            <h1>Photos</h1>
-        </div>
+  
+    </main>
+  </div>
 
-        <div class="text-block">
-
-            <p>I have interest (but little talent) in photography and recently started uploading some of my favorites to <a href="https://500px.com/jncj">500px</a>. During the 2006/7 academic year I participated in the <a href="http://citydailyphoto.org/">City Daily Photo</a> movement with <a href="http://jonemo.de/thedailylondonphoto/2007_06_01_archive.html">The Daily London Photo</a>.</p>
-
-            <p>Below is the section of my website with photos of yours truly. You call that narcissistic, I call it practical because this is my go-to collection when faced with an app that requires a profile photo during signup.</p>
-
-        </div>
-
-        <br clear="both">
-
-        <ul class="polaroids clearfix">
-            <li>
-                <a href="photos/me/SSA48469_500.jpg" >
-                    <img src="photos/me/SSA48469_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/DSC_1188_500.jpg" >
-                    <img src="photos/me/DSC_1188_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/IMG_0583_500.jpg" >
-                    <img src="photos/me/IMG_0583_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/SDC14625_500.jpg" >
-                    <img src="photos/me/SDC14625_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/DSC_1309_500.jpg" >
-                    <img src="photos/me/DSC_1309_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/IMG_1536_500.jpg" >
-                    <img src="photos/me/IMG_1536_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/IMG_5311_500.jpg" >
-                    <img src="photos/me/IMG_5311_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/IMG_5307_500.jpg" >
-                    <img src="photos/me/IMG_5307_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/IMG_1366_500.jpg" >
-                    <img src="photos/me/IMG_1366_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/DSC_1213_500.jpg" >
-                    <img src="photos/me/DSC_1213_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/BUPA_run_500.jpg">
-                    <img src="photos/me/BUPA_run_500.jpg">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/IMG_1359_500.jpg" >
-                    <img src="photos/me/IMG_1359_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/IMG_1499_500.jpg" >
-                    <img src="photos/me/IMG_1499_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/SDC10270_500.jpg" >
-                    <img src="photos/me/SDC10270_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/IMG_1444_500.jpg" >
-                    <img src="photos/me/IMG_1444_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/SDC14499_500.jpg" >
-                    <img src="photos/me/SDC14499_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/IMG_1742_500.jpg" >
-                    <img src="photos/me/IMG_1742_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/DSC_1217_500.jpg" >
-                    <img src="photos/me/DSC_1217_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/SDC14616_500.jpg" >
-                    <img src="photos/me/SDC14616_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/SDC14810_500.jpg" >
-                    <img src="photos/me/SDC14810_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/SDC14581_500.jpg" >
-                    <img src="photos/me/SDC14581_500.jpg" alt=" ">
-                </a>
-            </li>
-            <li>
-                <a href="photos/me/DSC_1306_500.jpg" >
-                    <img src="photos/me/DSC_1306_500.jpg" alt=" ">
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <div id="credits" class="row">
-        <p>&copy; Jonas Neubert</p>
-        <p>Credits: Polaroid style gallery inspired by <a href="http://www.zurb.com/playground/css3-polaroids">Zurb.com</a>. Photos taken by E.&nbsp;Neubert, C.&nbsp;Scheitz, L.&nbsp;Neubert, and an event photographer at the Great BUPA Run whose name I don't know.</p>
-    </div>
-
-<script>
+  <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
     function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
     e=o.createElement(i);r=o.getElementsByTagName(i)[0];
     e.src='//www.google-analytics.com/analytics.js';
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-435125-8','auto');ga('send','pageview');
-</script>
+  </script>
 
 </body>
 </html>

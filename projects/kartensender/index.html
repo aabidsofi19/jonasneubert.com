@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Jonas Neubert">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Jonas Neubert">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
-    <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.svg">
+  <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
+  <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="../../css/html5-boilerplate-v5.3.0.css">
-    <link rel="stylesheet" href="../../css/main.css">
+  <style>
+    #aboutTheProject {max-width: 520px; margin: 6% 45% 0 10%; padding: 0;} /* descriptive text on a project page, currently simply modeled after the text on the start page */
+    #aboutTheProject2 { padding-top:36px; padding-left: 93px; margin:0; padding-right:200px /* so that when scrolled all the way right nothing is hidden under the sidebar */}
+
+    #aboutTheProject2  .tile { float:left; margin-right: 16px; margin-bottom: 16px }
+    #aboutTheProject2 .below { clear:both; }
+    #aboutTheProject2 div.tileContainer { float:left; margin:0; padding:0}
+
+    #aboutTheProject2 .tileWidth1 {width:194px; }
+    #aboutTheProject2 .tileHeight1 {height:194px;}
+    #aboutTheProject2 .tileHeight2 {height:404px;}
+    #aboutTheProject2 .tileHeight3 {height:614px;}
+    #aboutTheProject2 .tileHeight4 {height:824px;}
+
+    #aboutTheProject2 .tilehyperlink {background-image:url('../noun_project_7365_hyperlink_pointer.svg'); background-repeat: no-repeat; background-position:center 20px; background-size:108px; text-align:center; line-height:310px}
+
+    #aboutTheProject2  .tile.text >p {padding: 0 20px}
+
+    #aboutTheProject2 h1 {display:none}
+
+    .projectDetailsLine { clear:both; margin:10px 0 0 30px; }
+    .projectDetailsLineHeading {clear: both; float: left; width:150px; font-weight:bold; }
+    .projectDetailsLineContent {border-bottom: 1px solid white; margin-left: 150px; width: 400px;}
+
+    .bgDenim1 {background-color: #0F2440; color: #fff}
+    .bgDenim2 {background-color: #284259; color: #fff}
+    .bgDenim3 {background-color: #61788C; color: #fff}
+    .bgDenim4 {background-color: #74888C; color: #fff}
+    .bgDenim5 {background-color: #BEBFB4; color: #fff}
+  </style>
 
   <title>Kartensender.de — Jonas Neubert</title>
   <meta name="viewport" content="width=1040px">
@@ -69,11 +96,6 @@
       </div>
 
   </div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
-<script src="../../js/plugins.js"></script>
-<script src="../../js/main.js"></script>
 
 <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

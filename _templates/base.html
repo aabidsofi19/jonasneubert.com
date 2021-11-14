@@ -22,7 +22,7 @@
     }
   </style>
 
-  <title>Volutabrum.de &mdash; a project by Jonas Neubert</title>
+  <title>{% block title required %}{% endblock %}</title>
 </head>
 
 <body>
@@ -30,6 +30,13 @@
   <div class="min-h-screen flex flex-col overflow-x-hidden md:container md:flex-row">
 
     <header class="flex-none px-4 md:w-72 md:space-y-4" style="background: #ffe400">
+      <!--
+      <h1 class="py-4">
+        <a href="/">
+          <img src="/jonasneubert.svg" alt="Jonas Neubert" style="width: 15rem; max-width: 15rem">
+        </a>
+      </h1>
+      -->
 
       <h1 class="pt-4 font-light text-6xl font-sans">
         Jonas Neubert
@@ -52,38 +59,7 @@
     </header>
 
     <main class="flex-auto px-8">
-      
-
-      <article>
-
-        <h1><span class="bg-black-90 lh-copy white pa1 tracked-tight">Volutabrum.de</span></h1>
-
-        <p class="subtitle"></p>
-
-        
-  <section>
-    <p>
-      <a href="http://volutabrum.de">Volutabrum.de</a> is a directory of German translations of Latin texts.
-      Sounds like a niche, but isn't.
-      One third of German high school students take Latin, trending up <small>(<a href="https://de.wikipedia.org/wiki/Latein">source</a>)</small>.
-      I was one of them, and started this page when I needed it during high school.
-      For a while it was pretty successful with several 100k visits per year, now it's in maintenance mode.
-    </p>
-
-    <figure class="fullwidth">
-      <img src="images/screenshot-2021.png">
-    </figure>
-
-    <!--
-    <figure>
-      <img src="images/google_analytics_visits_2012.jpg" width="194">
-    </figure>
-    -->
-  </section>
-
-      </article>
-
-
+      {% block content required %}{% endblock %}
     </main>
   </div>
 
