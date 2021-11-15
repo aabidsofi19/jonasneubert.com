@@ -19,3 +19,9 @@ main .highlighter {
     background: #ffe400;
     font-style: italic;
 }
+
+html {
+    font-family: Quicksand, "Century Gothic", AppleGothic, sans-serif;
+    letter-spacing: 0.04em;  /* bring back spacing from pre-Google fonts version of Quicksand */
+    font-weight:300;
+}

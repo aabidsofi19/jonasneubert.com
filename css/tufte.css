@@ -1,48 +1,9 @@
 @charset "UTF-8";
 
-/* Import ET Book styles
-   adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
-
-@font-face {
-    font-family: "et-book";
-    src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
-    src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "et-book";
-    src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
-    src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "et-book";
-    src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
-    src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "et-book-roman-old-style";
-    src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
-    src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 /* Tufte CSS styles */
-/* html {
-    font-size: 15px;
-} */
+/* Based on http://localhost:8001/projects/tufte-sample/, modified to play well with Tailwind, to
+   use Quicksand font, and for various other personal preferences. */
 
 article {
     /* width: 87.5%; */
@@ -102,9 +63,9 @@ article p.subtitle {
     line-height: 1;
 }
 
-article .numeral {
+/* article .numeral {
     font-family: et-book-roman-old-style;
-}
+} */
 
 article .danger {
     color: red;
@@ -157,36 +118,30 @@ article div.epigraph > blockquote > footer > cite {
 /* end chapter epigraphs styles */
 
 article blockquote {
-    /* font-size: 1.4rem; */
+    width: 62%;
     font-size: 1.2rem;
+    padding-left: 1.5em;
 }
 
-article blockquote p {
-    /* width: 55%; */
-    width: 62%;
-    margin-right: 40px;
+article blockquote p,
+article blockquote footer {
+    width: 100%;
+    font-size: 1.0rem;
+    line-height: 1.4rem;
 }
 
 article blockquote footer {
-    /* width: 55%; */
-    width: 62%;
-    font-size: 1.1rem;
     text-align: right;
 }
 
 article section > p,
 article section > footer,
-article section > table {
-    /* width: 55%; */
-    width: 62%;
-}
-
-/* 50 + 5 == 55, to be the same width as paragraph */
+article section > table,
 article section > dl,
 article section > ol,
 article section > ul {
-    width: 50%;
-    -webkit-padding-start: 5%;
+    /* width: 55%; */
+    width: 62%;
 }
 
 article dt:not(:first-child),
@@ -201,7 +156,7 @@ article figure {
     font: inherit;
     vertical-align: baseline;
     /* width: 55%; */
-    width: 62%;
+    max-width: 62%;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     margin: 0 0 3em 0;
@@ -360,8 +315,8 @@ article pre.fullwidth > code {
 }
 
 article .fullwidth {
-    max-width: 90%;
-    clear:both;
+    max-width: 98%;
+    clear: both;
 }
 
 article span.newthought {
@@ -422,23 +377,13 @@ article .iframe-wrapper iframe {
     }
 
     article figure {
-        max-width: 90%;
+        max-width: 95%;
     }
 
     article figcaption,
     article figure.fullwidth figcaption {
         margin-right: 0%;
         max-width: none;
-    }
-
-    article blockquote {
-        margin-left: 1.5em;
-        margin-right: 0em;
-    }
-
-    article blockquote p,
-    article blockquote footer {
-        width: 100%;
     }
 
     article label.margin-toggle:not(.sidenote-number) {
@@ -456,7 +401,7 @@ article .iframe-wrapper iframe {
         float: left;
         left: 1rem;
         clear: both;
-        width: 95%;
+        width: 98%;
         margin: 1rem 2.5%;
         vertical-align: baseline;
         position: relative;
