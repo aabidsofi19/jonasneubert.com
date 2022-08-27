@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jonemo/jonasneubert.com#readme",
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.16",
     "prettier-plugin-go-template": "^0.0.13",

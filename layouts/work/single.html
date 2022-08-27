@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <section class="p-4 py-8 md:p-10 w-full md:w-10/12 mx-auto">
+    <h1 class="text-5xl md:text-6xl   white pa-1 tracking-tight">
+      {{ .Title }}
+    </h1>
+
+    <p class="py-4 text-2xl md:text-3xl font-light  italic">
+      {{ .Params.subtitle }}
+    </p>
+
+    <article class="py-3 md:py-8  prose">
+      {{ .Content }}
+    </article>
+  </section>
+{{ end }}

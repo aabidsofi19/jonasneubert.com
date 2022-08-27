@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <title></title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700"
+      rel="stylesheet"
+    />
 
-  <!-- google font -->
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700" rel="stylesheet">
+    {{ $style := resources.Get "css/style.css" }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
+    {{ block "head" . }}{{ end }}
+  </head>
 
-  {{ $style := resources.Get "css/style.css" }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" />
-  {{ block "head" . }}{{ end }}
-</head>
-
-<body>
-  <div class="min-h-screen flex flex-col overflow-x-hidden md:container md:flex-row">
-    {{ partial "side-nav.html" . }}
-    {{ block "main" . }}{{ end }}
-  </div>
-</body>
-
+  <body>
+    <div
+      class="min-h-screen flex flex-col overflow-x-hidden md:container md:flex-row"
+    >
+      {{ partial "side-nav.html" . }}
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+    </div>
+  </body>
 </html>
