@@ -5,10 +5,6 @@ draft: false
 subtitle: 'Reverse engineering and reviving a 20-year old robot arm'
 ---
 
-# Mitsubishi Movemaster
-
-Reverse engineering and reviving a 20-year old robot arm
-
 ![](images/movemaster-sketch.jpg)
 
 This was my Final Year Project for my 4-year undergraduate degree in Mechanical Engineering at [Imperial College London](https://en.wikipedia.org/wiki/Imperial_College_London).

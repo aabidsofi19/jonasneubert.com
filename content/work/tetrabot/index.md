@@ -5,8 +5,6 @@ draft: false
 subtitle: 'A tetrahedral robot with no external moving parts that uses resonance for locomotion'
 ---
 
-# Tetrabot
-
 A tetrahedral robot with no external moving parts that uses resonance for locomotion
 
 Tetrabot was my research project while visiting the Cornell Computational Synthesis Lab as an undergraduate researcher in summer 2007.

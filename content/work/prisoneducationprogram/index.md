@@ -5,10 +5,6 @@ draft: false
 subtitle: 'Going to prison for teaching algebra'
 ---
 
-# Cornell Prison Education Program
-
-Going to prison for teaching algebra
-
 Why teach Cornell undergrads when you can teach maximum security prison inmates?
 When I was in grad school at Cornell, I signed up as a teaching assistant with the [Cornell Prison Education Program](http://cpep.cornell.edu) (CPEP) and was assigned to a pre-college math class.
 Every Thursday I drove an hour to Auburn, walked through nine gates and across two prison yards, into the school building, and taught 20 or so students as much math as you need to get through a liberal arts degree.

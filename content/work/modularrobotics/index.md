@@ -4,11 +4,6 @@ date: 2022-08-27T18:09:38+05:30
 draft: false
 subtitle: 'Little robots that solder themselves to each other'
 ---
-
-# Reconfigurable Modular Robotics
-
-Little robots that solder themselves to each other
-
 ![](images/soldercubes-assemblies.jpg)
 
 For the graduate school thesis work I set out to demonstrate complex “ecosystem” behaviors with large numbers of custom-made modular robots.

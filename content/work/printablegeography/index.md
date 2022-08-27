@@ -5,10 +5,6 @@ draft: false
 subtitle: 'Mass customization meets GIS meets iPhone cases'
 ---
 
-# Printablegeography.com
-
-Mass customization meets GIS meets iPhone cases
-
 The **Society for Printable Geography** was a project together with [Conny Scheitz](http://corneliascheitz.com/).
 Our mission is to use geography as central topic for a creative exploration into the unchartered waters of data driven design, mass customization, and 21st century manufacturing techniques.
 

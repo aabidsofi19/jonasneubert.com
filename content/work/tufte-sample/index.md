@@ -1,13 +1,10 @@
 ---
-title: 'block:project_page_heading'
+title: 'Tufte CSS Sample'
 date: 2022-08-27T18:09:38+05:30
-draft: false
-subtitle: 'block:project_page_subtitle'
+draft: true
+subtitle: ''
 ---
 
-# block:project_page_heading
-
-block:project_page_subtitle
 
 Tufte CSS provides tools to style web articles using the ideas demonstrated by Edward Tufte’s books and handouts. Tufte’s style is known for its simplicity, extensive use of sidenotes, tight integration of graphics with text, and carefully chosen typography.
 

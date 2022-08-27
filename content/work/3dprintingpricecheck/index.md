@@ -5,9 +5,6 @@ draft: false
 subtitle: 'kayak.com for 3d printing services'
 ---
 
-# 3dPrintingPricecheck.com
-
-kayak.com for 3d printing services
 
 3dprintingpricecheck.com was a website for comparing prices between several 3D printing services including Shapeways, iMaterialize, Sculpteo, …
 Users would “upload” an STL file by dragging it into the page.

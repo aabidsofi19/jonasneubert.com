@@ -5,8 +5,6 @@ draft: false
 subtitle: ''
 ---
 
-# Self-assembly for Modular Robots
-
 Stochastic Assembly (buzzword: Programmable Matter) was one of the two topics I looked into during my PhD research.
 
 If this project had worked as I had hoped it would, there would only have been a single topic…
@@ -18,6 +16,8 @@ The following links are probably a good starting point.
 - Tolley M. T., Kalontarov M., Neubert J., Erickson D., Lipson H. (2010) "[Stochastic Modular Robotic Systems: A Study of Fluidic Assembly Strategies](http://ccsl.mae.cornell.edu/sites/default/files/T-RO-10-Tolley.pdf)", [**IEEE Transactions on Robotics**](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5462863), Vol. 26, pp. 518-530.
 
 The video below (with narration) by my former colleague [Mike Tolley](https://tolley.eng.ucsd.edu) contains a good explanation of what we were up to with this research (but naturally focusses on his work, not mine).
+
+{{< youtube pzAEfWqzN84 >}}
 
 The overarching idea behind the project is described in the below poster which I made for a depertment-internal poster session in 2010.
 Here is a high-res [PDF version](ProgrammableMatterPoster2010.pdf).

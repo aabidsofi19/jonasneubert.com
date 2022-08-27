@@ -5,7 +5,6 @@ draft: false
 subtitle: ''
 ---
 
-# Calculator App for webOS
 
 When the HP Touchpad was still new and webOS wasn't completely dead yet, [Conny](http://www.corneliascheitz.com) and I created a series of calculator apps for webOS.
 The Touchpad came without a preloaded calculator app, so we gave a basic calculator away for free with in-app upgrade options for our more specialized creations.
