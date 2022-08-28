@@ -53,7 +53,7 @@ Convert website to Hugo. Milestone complete when ready to publish.
 1. Create All Talks page  [done]
 1. Create Single Talk page [done]
 1. Migrate all talks [done]
-1. Fix Youtube embeds and slide decks [pending]
+1. Fix Youtube embeds and slide decks [done]
     - Extreme Bikesharing: How I used Python to plan an epic Ford GoBike trip [done]
     - Factory Automation with Python [done]
     - Python & Programmable Logic Controllers: A Step by Step Guide [done]
