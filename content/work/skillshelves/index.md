@@ -5,7 +5,6 @@ draft: false
 subtitle: 'A demo of learning paths as a book website concept (that earned me an iPad!)'
 ---
 
- concept (that earned me an iPad!)
 
 [Skillshelv.es](http://www.skillshelv.es) is was a web application using [Fluidinfo](http://fluidinfo.com)'s (then very) novel globally writable database.
 The concept I designed combines a means of skills presentation with a book discovery and won me the second prize of the O'Reilly Fluidinfo API competition (an iPad!)

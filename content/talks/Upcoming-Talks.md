@@ -2,7 +2,7 @@
 title: "Upcoming Talks"
 date: 2022-08-27T18:09:38+05:30
 draft: false
-localtion: "SF Python"
+location: ""
 ---
 
 Upcoming Talks

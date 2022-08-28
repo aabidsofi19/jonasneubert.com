@@ -1,53 +1,41 @@
 ---
 title: "What is a PLC and how do I talk Python to it?"
-date: 2022-08-27T18:09:38+05:30
+date: 2019-11-27T18:09:38+05:30
 draft: false
-localtion: "SF Python"
+location: "North Bay Python 2019"
 ---
 
 What is a PLC and how do I talk Python to it?
 =============================================
 
-
 Presented at **North Bay Python 2019**, Nov 2019, Petaluma, CA
 
-
 [Abstract on conference website](https://2019.northbaypython.org/schedule/presentation/17/). This was a modified version of the [talk I gave at PyCon 2019](./pycon2019.html).
-
 
 Video
 -----
 
-
+{{< youtube EMkWRlbpJsk>}}
 
 Slides
 ------
 
-
-
-
+{{< speakerdeck cb6670cd5c5c43b4b22e0e1969ec9aa5 >}}
 
 Code from the presentation
 --------------------------
-
-
 
 [This Github repo](https://github.com/jonemo/pycon2019-plc-demo) contains the PLC projects and Python code used during the presentation, as well as a few files that didn't make the cut due to the time limit.
  Note that the PLC projects can be edited with the free "Productivity Suite" software (Windows only) which you can download from Automation Direct [here](https://support.automationdirect.com/products/p3000.html).
  The README files in the repo should contain all the information needed to open the files.
  To actually run the code, you will need to have a physical PLC.
- 
-
 
 Please open an issue in the Github repo if you find an error or have a question!
-
 
 Links from the presentation
 ---------------------------
 
-
 ### PyPI packages mentioned
-
 
 * [pycomm](https://pypi.org/project/pycomm/)
 * [python-snap7](https://pypi.org/project/python-snap7/)
@@ -76,9 +64,7 @@ Links from the presentation
 * [rawsocketpy](https://pypi.org/project/rawsocketpy/)
 * [dnet](https://pypi.org/project/dnet/)
 
-
 ### Other Assorted Links
-
 
 * [This PDF by GE Automation](http://www.geautomation.com/system/files/files/opc_ua_-_the_information_backbone_wp_gft909_2.pdf) is a well-written introduction to what OPC-UA standardizes and how it came about to replace its Microsoft-only predecessor. See also the FreeOpcUa project above.
 * [List of Automation Protocols](https://en.wikipedia.org/wiki/List_of_automation_protocols) on Wikipedia
@@ -86,5 +72,3 @@ Links from the presentation
 * [My spreadsheet of PLC brands and products](http://jonemo.github.io/neubertify/2019/04/27/list-of-plc-brand-names-and-products/)
 * [IEC 61131-3](https://en.wikipedia.org/wiki/IEC_61131-3) on Wikipedia
 * [IEC 61131](https://en.wikipedia.org/wiki/IEC_61131) on Wikipedia
-
-

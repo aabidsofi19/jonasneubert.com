@@ -1227,10 +1227,6 @@ video {
   flex-direction: column;
 }
 
-.place-items-center {
-  place-items: center;
-}
-
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1243,25 +1239,12 @@ video {
   margin-bottom: calc(0px * var(--tw-space-y-reverse));
 }
 
-.self-center {
-  align-self: center;
-}
-
 .overflow-x-hidden {
   overflow-x: hidden;
 }
 
 .whitespace-nowrap {
   white-space: nowrap;
-}
-
-.border-4 {
-  border-width: 4px;
-}
-
-.border-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
 .p-4 {
@@ -1283,9 +1266,9 @@ video {
   padding-right: 0.5rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-4 {
@@ -1298,17 +1281,18 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .font-sans {
@@ -1510,6 +1494,16 @@ main .highlighter {
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:text-6xl {

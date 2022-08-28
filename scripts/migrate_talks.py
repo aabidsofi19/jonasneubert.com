@@ -12,7 +12,7 @@ def gen_front_matter(heading ):
 title: "{title}"
 date: 2022-08-27T18:09:38+05:30
 draft: false
-localtion: "SF Python"
+location: "SF Python"
 ---"""
 
     return template.format(title=heading)

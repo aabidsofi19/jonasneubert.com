@@ -1,3 +1,5 @@
 baseURL = 'http://jonasneubert.com/'
 languageCode = 'en-us'
 title = 'Jonas Neubert'
+
+enableRobotsTXT = true

@@ -1,9 +1,12 @@
 {{ define "main" }}
-  <ul>
-    {{ range .Pages }}
-      <li>
-        <a href="{{ .Permalink }}"> {{ .Title }}</a> {{ .Date.Format "2006" }}
-      </li>
-    {{ end }}
-  </ul>
+  <main class="prose w-full px-4 py-10 ">
+    <h1>My Work</h1>
+    <ul>
+      {{ range .Pages }}
+        <li>
+          <a href="{{ .Permalink }}"> {{ .Title }}</a> {{ .Date.Format "2006" }}
+        </li>
+      {{ end }}
+    </ul>
+  </main>
 {{ end }}
