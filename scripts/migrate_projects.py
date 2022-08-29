@@ -58,5 +58,11 @@ def migrate():
 
 
 if __name__ == "__main__":
-
-    migrate()
+    print(
+        """Danger Ahead The Following Action will overwrite
+         existing files create backup before moving ahead :) \n 
+         """
+    )
+    confirm = input("Continue [Y/N] ").strip().lower()
+    if confirm == "y" or confirm == "yes":
+        migrate()

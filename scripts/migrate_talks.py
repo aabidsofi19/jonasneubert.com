@@ -6,7 +6,7 @@ import markdownify
 from bs4 import BeautifulSoup
 
 
-def gen_front_matter(heading ):
+def gen_front_matter(heading):
 
     template = """---
 title: "{title}"
@@ -28,9 +28,9 @@ def migrate():
     talks = os.listdir("../old-site/talks/")
     print("All Talk files :", talks)
 
-    for talk in talks :
+    for talk in talks:
         file = f"../old-site/talks/{talk}"
-        
+
         print(f"[migrating] : {file}")
         with open(file) as f:
 
@@ -53,4 +53,11 @@ def migrate():
 
 if __name__ == "__main__":
 
-    migrate()
+    print(
+        """Danger Ahead The Following Action will overwrite
+         existing files create backup before moving ahead :) \n 
+         """
+    )
+    confirm = input("Continue [Y/N] ").strip().lower()
+    if confirm == "y" or confirm == "yes":
+        migrate()
