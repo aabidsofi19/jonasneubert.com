@@ -1,6 +1,7 @@
 ---
 title: 'Printablegeography.com'
-date: 2022-08-27T18:09:38+05:30
+start_date: 2011
+end_date: 2013
 draft: false
 subtitle: 'Mass customization meets GIS meets iPhone cases'
 ---

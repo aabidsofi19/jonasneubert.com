@@ -1,6 +1,7 @@
 ---
 title: 'Reconfigurable Modular Robotics'
-date: 2022-08-27T18:09:38+05:30
+start_date: 2011
+end_date: 2014
 draft: false
 subtitle: 'Little robots that solder themselves to each other'
 ---

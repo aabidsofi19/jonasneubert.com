@@ -1,6 +1,6 @@
 ---
 title: 'Cranes & Clouds'
-date: 2022-08-27T18:09:38+05:30
+start_date: 2021
 draft: false
 subtitle: 'Daily timelapse videos from a camera on our balcony'
 ---

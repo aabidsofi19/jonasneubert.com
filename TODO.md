@@ -66,6 +66,6 @@ Convert website to Hugo. Milestone complete when ready to publish.
 1. Create Shortcodes for speakerdeck and cleanup script mess [done]
 1. Active Section Should be underlined in Navbar [done]
 1. Remove Upcomming Talks Subpage [done]
-1. Projects should have a start and end date
-1. Add the "Academic Publications" and "Misc" sections under the projects list.
+1. Projects should have a start and end date [done] 
+1. Add the "Academic Publications" and "Misc" sections under the projects list. [done]
 1. Talk should have multiple locations .

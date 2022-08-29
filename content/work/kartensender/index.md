@@ -2,6 +2,8 @@
 title: 'Kartensender.de'
 date: 2022-08-27T18:09:38+05:30
 draft: false
+start_date: 2008
+end_date: 2011
 subtitle: 'An early iPhone app for sending real-world postcards'
 ---
 [Kartensender](http://www.kartensender.de) is a smartphone-to-mailbox postcard sending service. During the launch and first few years of operation I worked as its “CTO-for-hire”, writing all server side code and managing technical contractors.

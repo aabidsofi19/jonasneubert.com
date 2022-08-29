@@ -2,6 +2,7 @@
 title: 'World Cup Live App for webOS'
 date: 2022-08-27T18:09:38+05:30
 draft: false
+start_date: 2010
 subtitle: 'Soccer world cup app with live-ish scores for Palm Pre users'
 ---
 

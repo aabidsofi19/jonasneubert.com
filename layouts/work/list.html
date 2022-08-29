@@ -2,9 +2,11 @@
   <main class="prose w-full px-4  mx-auto">
     <h1 class="mt-16">My Work</h1>
     <ul>
-      {{ range .Pages }}
+      {{ range .Pages.ByParam "start_date" }}
         <li>
-          <a href="{{ .Permalink }}"> {{ .Title }}</a> {{ .Date.Format "2006" }}
+          <a href="{{ .Permalink }}"> {{ .Title }}</a> {{ .Params.start_date }}
+          {{ with .Params.end_date }}- {{ . }}{{ end }}
+
         </li>
       {{ end }}
     </ul>

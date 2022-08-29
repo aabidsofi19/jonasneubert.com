@@ -1,6 +1,6 @@
 ---
 title: 'Tetrabot'
-date: 2022-08-27T18:09:38+05:30
+start_date: 2007
 draft: false
 subtitle: 'A tetrahedral robot with no external moving parts that uses resonance for locomotion'
 ---

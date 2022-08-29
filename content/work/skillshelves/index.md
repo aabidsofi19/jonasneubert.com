@@ -1,6 +1,6 @@
 ---
 title: 'Skillshelv.es'
-date: 2022-08-27T18:09:38+05:30
+start_date: 2012
 draft: false
 subtitle: 'A demo of learning paths as a book website concept (that earned me an iPad!)'
 ---
