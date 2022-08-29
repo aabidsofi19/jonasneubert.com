@@ -68,4 +68,5 @@ Convert website to Hugo. Milestone complete when ready to publish.
 1. Remove Upcomming Talks Subpage [done]
 1. Projects should have a start and end date [done] 
 1. Add the "Academic Publications" and "Misc" sections under the projects list. [done]
-1. Talk should have multiple locations .
+1. Talk should have multiple locations [done].
+1. Add PLC talk pycon  and google analytics [done]. 
