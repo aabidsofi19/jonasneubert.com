@@ -11,34 +11,21 @@
     <ul
       class="flex flex-row space-x-4 space-y-0 md:flex-col md:space-x-0 md:space-y-2 whitespace-nowrap"
     >
-      <li class="flex-initial block">
-        <a
-          class="inline-block md:px-2 underline hover:text-white hover:bg-red-600"
-          href="/"
-          >About</a
-        >
-      </li>
-      <li class="flex-initial block">
-        <a
-          class="inline-block md:px-2  hover:text-white hover:bg-red-600"
-          href="/work"
-          >Projects</a
-        >
-      </li>
-      <li class="flex-initial block">
-        <a
-          class="inline-block md:px-2  hover:text-white hover:bg-red-600"
-          href="/talks/"
-          >Talks</a
-        >
-      </li>
-      <li class="flex-initial block">
-        <a
-          class="inline-block md:px-2 hover:text-white hover:bg-red-600"
-          href="https://blog.jonasneubert.com"
-          >Blog</a
-        >
-      </li>
+      {{ $current := . }}
+      {{ range .Site.Menus.nav }}
+
+        {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+
+        <li class="flex-initial block">
+
+          <a href="{{ .URL }}" class="inline-block md:px-2  hover:text-white hover:bg-red-600 {{ if $active }}underline{{ end }}"
+          >
+            {{ .Name }}</a
+          >
+        </li>
+      {{ end }}
+
+
       <!-- external navbar links shrink to icons on small screens: -->
       <li class="flex-initial hidden md:block">
         <a
@@ -86,6 +73,8 @@
           <!-- icon source: https://simpleicons.org/?q=linkedin -->
         </a>
       </li>
+    </ul>
+ 
     </ul>
   </nav>
 </header>
