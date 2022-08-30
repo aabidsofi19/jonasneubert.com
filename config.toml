@@ -4,6 +4,12 @@ title = 'Jonas Neubert'
 
 enableRobotsTXT = true
 
+[outputs]
+  home = ['HTML']
+  page = ['HTML']
+  section = ['HTML']
+  taxonomy = ['HTML']
+  term = ["HTML"]
 
 [menu]
   [[menu.nav]]
