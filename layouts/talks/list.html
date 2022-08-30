@@ -13,10 +13,15 @@
 
     <ul>
       {{ range .Pages }}
-        <li>
-          <a href="{{ .Permalink }}"> {{ .Title }} </a>
-          {{ .Params.location }}
-        </li>
+        {{ $page := . }}
+
+        {{ range .Params.locations }}
+          <li>
+            <a href="{{ $page.Permalink }}"> {{ $page.Title }} </a>
+            {{ . }}
+            <!--location-->
+          </li>
+        {{ end }}
       {{ end }}
     </ul>
 

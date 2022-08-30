@@ -2,7 +2,7 @@
 title: "Factory Automation with Python"
 date: 2017-04-27T18:09:38+05:30
 draft: false
-location: "Pycon 2017"
+locations: ["Pycon 2017"]
 ---
 
 Factory Automation with Python

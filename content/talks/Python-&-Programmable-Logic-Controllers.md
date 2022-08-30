@@ -2,7 +2,7 @@
 title: "Python & Programmable Logic Controllers: A Step by Step Guide"
 date: 2020-10-27T18:09:38+05:30
 draft: false    
-location: "PyCon India 2020"
+locations: ["PyCon India 2020"]
 ---
 
 Python & Programmable Logic Controllers: A Step by Step Guide

@@ -2,7 +2,7 @@
 title: "Zebras and Lasers Full Talk"
 date: 2018-08-27T18:09:38+05:30
 draft: false
-location: "Pybay 2018"
+locations: ["Pybay 2018"]
 ---
 
 Zebras and Lasers
