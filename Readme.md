@@ -12,16 +12,18 @@ Before moving to the New World, I completed an M.Eng. (my undergrad degree) at I
 Requirements :
   hugo , node , yarn needs to be installed on your system. 
 
+Required Hugo version :-  hugo v0.102.0 or above
+
 Install dependencies using :
 
 ``` yarn install ```  ( inside the project root)
 
 Develop Locally :
 
-``` hugo serve ```
+```yarn dev```
 
 Build for production :
 
-```hugo --minify```
+```yarn build```
 
 The build artifacts will be inside public dir. 
