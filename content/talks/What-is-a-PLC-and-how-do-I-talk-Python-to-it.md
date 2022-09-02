@@ -11,7 +11,7 @@ What is a PLC and how do I talk Python to it?
 
 Presented at **North Bay Python 2019**, Nov 2019, Petaluma, CA
 
-[Abstract on conference website](https://2019.northbaypython.org/schedule/presentation/17/). This was a modified version of the [talk I gave at PyCon 2019](./pycon2019.html).
+[Abstract on conference website](https://2019.northbaypython.org/schedule/presentation/17/). This was a modified version of the [talk I gave at PyCon 2019](/pycon2019).
 
 Video
 -----

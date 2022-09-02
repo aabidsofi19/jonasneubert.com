@@ -47,4 +47,4 @@ Links from the presentation
 * [My spreadsheet of PLC brands and products (2019)](https://blog.jonasneubert.com/neubertify/2019/04/27/list-of-plc-brand-names-and-products/)
 * [Reddit thread collecting resources for getting started with PLCs](https://www.reddit.com/r/PLC/comments/ehu2u3/read_first_how_to_learn_plcs_and_get_into_the/)
 
-More links related to Python & PLCs are available on the page for my 2019 PyCon US talk: [What is a PLC and how do I talk Python to it?](./pycon2019.html)
+More links related to Python & PLCs are available on the page for my 2019 PyCon US talk: [What is a PLC and how do I talk Python to it?](/pycon2019)
