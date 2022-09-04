@@ -3,7 +3,7 @@ title: "Zebras and Lasers Full Talk"
 date: 2018-08-27T18:09:38+05:30
 draft: false
 locations: ["Pybay 2018"]
-
+aliases: ["/talks/pybay2018.html"]
 ---
 
 Zebras and Lasers

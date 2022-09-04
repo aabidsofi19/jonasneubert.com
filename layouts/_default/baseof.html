@@ -28,8 +28,14 @@
 
     {{ $style := resources.Get "css/style.css" }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
+    <title itemprop="name">
+      {{ if (eq .Title .Site.Title) }}
+        {{.Site.Title }}
+      {{ else }}
+        {{ .Title }} - {{ .Site.Title }}
+      {{end}}
+    </title>
 
-    <title>{{ .Title }}</title>
     {{ block "head" . }}{{ end }}
   </head>
 

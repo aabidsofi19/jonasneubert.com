@@ -3,7 +3,7 @@ title: "Factory Automation with Python"
 date: 2017-04-27T18:09:38+05:30
 draft: false
 locations: ["Pycon 2017"]
-aliases: ["/pycon2017"]
+aliases: ["/pycon2017","/talks/pycon2017.html"]
 ---
 
 Factory Automation with Python

@@ -3,6 +3,7 @@ title: "Zebras & Lasers Lightning Talk"
 date: 2017-12-07T18:09:38+05:30
 draft: false
 locations: ["SF Python Holiday party 2017"]
+aliases: ["/talks/sfpython2017.html"]
 ---
 
 Zebras & Lasers

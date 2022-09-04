@@ -2,7 +2,8 @@
 title: "Extreme Bikesharing: How I used Python to plan an epic Ford GoBike trip"
 date: 2020-01-08T18:09:38+05:30
 draft: false
-locations: ["SF Python Talk Night 2020"]
+locations: ["SF Python Talk Night 2020","Full Stack Development Meetup Group"]
+aliases : ["/talks/extremebikesharing2020.html"]
 ---
 
 Extreme Bikesharing: How I used Python to plan an epic Ford GoBike trip

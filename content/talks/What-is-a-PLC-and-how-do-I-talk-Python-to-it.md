@@ -3,7 +3,7 @@ title: "What is a PLC and how do I talk Python to it?"
 date: 2019-11-27T18:09:38+05:30
 draft: false
 locations: ["North Bay Python 2019"]
-aliases: ["/nbpy2019"]
+aliases: ["/nbpy2019","/talks/northbaypython2019.html"]
 ---
 
 What is a PLC and how do I talk Python to it?
