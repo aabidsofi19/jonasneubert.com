@@ -2,6 +2,8 @@
 
 ## Requirements
 
+| Requirement | Install instructions |
+| --- | --- |
 | Hugo | https://gohugo.io/getting-started/installing/ |
 | node | https://github.com/nvm-sh/nvm#installing-and-updating |
 | yarn | `corepack enable` |
