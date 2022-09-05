@@ -1,0 +1,30 @@
+baseURL = 'https://jonasneubert.com/'
+languageCode = 'en-us'
+title = 'Jonas Neubert'
+
+enableRobotsTXT = true
+
+[outputs]
+  home = ['HTML']
+  page = ['HTML']
+  section = ['HTML']
+  taxonomy = ['HTML']
+  term = ["HTML"]
+
+[menu]
+  [[menu.nav]]
+    name = "About"
+    pageref = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Projects"
+    pageref = "/work/"
+    weight = 2
+  [[menu.nav]]
+    name = "Talks"
+    pageref = "/talks/"
+    weight = 3
+  [[menu.nav]]
+    name = "Blog"
+    url = "https://blog.jonasneubert.com/"
+    weight = 4

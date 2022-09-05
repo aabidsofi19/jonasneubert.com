@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jonas Neubert">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32px.png">
+  <link rel="icon" sizes="192x192" type="image/png" href="/favicon-192px.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.svg">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.css"/>
+  <link rel="stylesheet" href="/css/tufte.css"/>
+  <link rel="stylesheet" href="/css/main.css"/>
+
+  <title>Reconfigurable Modular Robotics &mdash; a project by Jonas Neubert</title>
+</head>
+
+<body>
+
+  <div class="min-h-screen flex flex-col overflow-x-hidden md:container md:flex-row">
+
+    <header class="flex-none px-4 md:w-72 md:space-y-4" style="background: #ffe400">
+
+      <h1 class="pt-4 font-light text-6xl font-sans">
+        Jonas Neubert
+      </h1>
+
+      <p class="text-sm font-medium text-black md:ml-6">
+        &hellip; works with bits and atoms
+      </p>
+
+      <nav class="tracking-tighter text-2xl font-semibold text-black mt-6 mb-1 md:ml-4">
+        <ul class="flex flex-row space-x-4 space-y-0 md:flex-col md:space-x-0 md:space-y-2 whitespace-nowrap">
+          <li class="flex-initial block"><a class="inline-block md:px-2  hover:text-white hover:bg-red-600" href="/">About</a></li>
+          <li class="flex-initial block"><a class="inline-block md:px-2  hover:text-white hover:bg-red-600" href="/work.html">Projects</a></li>
+          <li class="flex-initial block"><a class="inline-block md:px-2  hover:text-white hover:bg-red-600" href="/talks/">Talks</a></li>
+          <li class="flex-initial block"><a class="inline-block md:px-2 hover:text-white hover:bg-red-600" href="https://blog.jonasneubert.com">Blog</a></li>
+          <!-- external navbar links shrink to icons on small screens: -->
+          <li class="flex-initial hidden md:block"><a class="inline-block px-2 hover:text-white hover:bg-red-600" href="https://twitter.com/jonemo">Twitter</a></li>
+          <li class="flex-initial block md:hidden"><a class="inline-block" href="https://twitter.com/jonemo">
+            <svg style="height: 1em" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            <!-- icon source: https://simpleicons.org/?q=twitter -->
+          </a></li>
+          <li class="flex-initial hidden md:block"><a class="inline-block px-2 hover:text-white hover:bg-red-600" href="https://www.linkedin.com/in/jonasneubert">Linkedin</a></li>
+          <li class="flex-initial block md:hidden"><a class="inline-block" href="https://www.linkedin.com/in/jonasneubert">
+            <svg style="height: 1em" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <!-- icon source: https://simpleicons.org/?q=linkedin -->
+          </a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="flex-auto px-8">
+      
+
+      <article>
+
+        <h1><span class="bg-black-90 lh-copy white pa1 tracked-tight">Reconfigurable Modular Robotics</span></h1>
+
+        <p class="subtitle">Little robots that solder themselves to each other</p>
+
+        
+
+  <section>
+
+    <figure class="fullwidth">
+      <img src="images/soldercubes-assemblies.jpg">
+    </figure>
+
+    <p>
+      For the graduate school thesis work I set out to demonstrate complex &ldquo;ecosystem&rdquo; behaviors with large numbers of custom-made modular robots.
+      However, I quickly realized the challenges of building the fleet of approximately 40 little robots and then maintaining them to be reliable enough to not randomly fail during demos.
+      As a result, I quickly pivoted towards developing a module design for reconfigurable modular robots that was radically simpler and cheaper than prior projects in the academic literally.
+      The focus of this work was on the connection mechanism which was the main driver of cost, BOM size, and complexity.
+    </p>
+
+  </section>
+
+  <section>
+    <p>
+      This work ultimately found its way into two academic papers.
+    </p>
+
+    <p>
+      The first one covers exclusively the connector:
+      <u>Neubert, J.</u>, Rost, A., Lipson, H. (2014)
+      &ldquo;<a href="https://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6888504">Self-Soldering Connectors for Modular Robots</a>&rdquo;,
+      <strong>IEEE Transactions on Robotics</strong>,
+      vol. 30, pp. 1344-1357,
+      (<a href="self-soldering-connectors-for-modular-robots-jonas-neubert.pdf">preprint pdf</a>)
+    </p>
+
+    <blockquote>
+      <p>
+        The connection mechanism between neighboring
+        modules is the most critical sub-system of each module in a
+        modular robot. Here we describe a strong, lightweight, solid state
+        connection method based on heating a low melting point alloy to
+        form reversible soldered connections. No external manipulation
+        is required for forming or breaking connections between adja-
+        cent connectors, making this method suitable for reconfigurable
+        systems such as self-reconfiguring modular robots. Energy is
+        only consumed when switching connectivity, and the ability to
+        transfer power and signal through the connector is inherent to the
+        method. Soldering connectors have no moving parts, are orders of
+        magnitude lighter than other connectors, and are readily mass
+        manufacturable. The mechanical strength of the connector is
+        measured as 173N, enough to support many robot modules, and
+        hundreds of connection cycles are performed before failure.
+      </p>
+    </blockquote>
+
+    <p>
+      The second one covers the design of the complete robot module:
+      <u>Neubert, J.</u>, Lipson, H. (2016)
+      &ldquo;<a href="https://link.springer.com/article/10.1007/s10514-015-9441-4">Soldercubes: A&nbsp;Self-soldering Self-reconfiguring Modular Robot System</a>&rdquo;,
+      <strong>Autonomous Robots</strong>,
+      vol. 40, pp. 139-158,
+      (<a href="https://fab.cba.mit.edu/classes/865.18/discrete/micro/solder_cubes.pdf">pdf</a>, <a href="soldercubes-selfsoldering-modular-robot-system-jonas-neubert.pdf">preprint pdf</a>)
+    </p>
+
+    <blockquote>
+      <p>
+        Soldercubes are a self-reconfiguring modular robot (MR) system whose modules are light weight, low cost, and designed with manufacturability for large batch production in mind.
+        The frequently cited promises of modular robotics—versatility, robustness, and low cost—assume the availability of large numbers of modules.
+        However, modules in most MR prototypes are large, mechanically complex, expensive, and difficult to manufacture.
+        Soldercubes partially overcome this contradiction through optimizing some components for volume manufacturing processes.
+        With the integration of a soldering connector which weighs only 2 g and has no moving parts, Soldercubes are among the cheapest, lightest and smallest among comparable self-reconfiguring MR systems.
+        This paper describes the Soldercube module design in detail, reports on experiments in a lattice configuration, explores non-lattice applications of the system, and discusses the effects of utilising volume manufacturing processes in module production.
+        All Soldercubes design files are released as open source hardware.
+      </p>
+    </blockquote>
+  </section>
+
+  <section>
+    <p>
+      As stated in the abstract on the second paper, the hardware and software design files for the Soldercube modules are available under an open source license.
+      This remains true today but you need to know where to look because the official project website was unceremoniously deleted when my grad school lab at Cornell closed down.
+      Here are the Github repos:
+    </p>
+
+    <ul>
+      <li><a href="https://github.com/jonemo/soldercubes"><code>soldercubes</code></a> contains the hardware designs in Solidworks format</li>
+      <li><a href="https://github.com/jonemo/soldercubes-controller"><code>soldercubes-controller</code></a> contains the embedded C code for the Atmel controllers inside each module</li>
+      <li><a href="https://github.com/jonemo/soldercubes-electricimp"><code>soldercubes-electricimp</code></a> contains the code written during a small tangent where I used the <a href="https://www.electricimp.com">electric imp</a> IoT platform to make my robots &ldquo;cloud-controllable&rdquo;.</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <figure>
+      <img src="images/soldercubes-motor-partially-assembled.jpg">
+    </figure>
+  </section>
+
+
+
+      </article>
+
+
+    </main>
+  </div>
+
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-435125-8','auto');ga('send','pageview');
+  </script>
+
+</body>
+</html>

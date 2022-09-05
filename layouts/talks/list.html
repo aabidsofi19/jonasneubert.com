@@ -1,0 +1,48 @@
+{{ define "main" }}
+  <article class="prose w-full md:w-10/12 px-4  py-10 md:py-6  mx-auto ">
+    <h1 class="mt-16">Upcoming Talks</h1>
+
+    <p>None scheduled!</p>
+
+    <p>
+      Let me know if there is an automation topic you think I should talk about
+      next: jn@jonasneubert.com
+    </p>
+
+    <h1>Conference Talks</h1>
+
+    <ul>
+      {{ range .Pages }}
+        {{ $page := . }}
+
+        {{ range .Params.locations }}
+          <li>
+            <a href="{{ $page.Permalink }}"> {{ $page.Title }} </a>
+            {{ . }}
+            <!--location-->
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+
+    <h1>Academic Talks</h1>
+
+    <ul>
+      <li>
+        <a
+          href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5650424"
+          >Tetrabot: Resonance Based Locomotion for Harsh Enviroments</a
+        >
+        (sic) at IEEE Int. Conf. on Intelligent Robots and Systems (IROS'10)
+      </li>
+      <li>
+        <a
+          href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5509455"
+          >A&nbsp;Robotic Module for Stochastic Fluidic Assembly of
+          3D&nbsp;Self-Reconfiguring Structures</a
+        >
+        at IEEE Int. Conf. on Robotics and Automation (ICRA'10)
+      </li>
+    </ul>
+  </article>
+{{ end }}

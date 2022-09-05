@@ -1,0 +1,82 @@
+{{ define "head" }}
+  {{ $style := resources.Get "css/home.css" }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+{{ end }}
+
+{{ define "main" }}
+
+  <main class="flex-auto px-8">
+    <div id="couchcorner">
+      <div id="mynameisjonas">
+        <p>My name is Jonas</p>
+      </div>
+      <img
+        id="speakingbubble1"
+        src="images/speakingbubble.png"
+        width="20"
+        height="10"
+      />
+      <img id="couch" src="images/couch.png" height="264" width="376" alt="" />
+    </div>
+
+    <div id="aboutjonas">
+      <div>
+        <p>Hi, I'm Jonas.</p>
+
+        <p>
+          I&nbsp;am automation engineer and software developer. Put differently:
+          I&nbsp;like bits and atoms equally. I&nbsp;enjoy working on
+          multi-disciplinary projects that are more complex than complicated.<!--, which I&nbsp;currently do at&nbsp;<a href=""></a>.-->
+        </p>
+
+        <p>
+          Previously, I&nbsp;helped build some of the world's most advanced
+          laboratory automation at&nbsp;<a href="http://counsyl.com">Counsyl</a>
+          and <a href="https://www.zymergen.com">Zymergen</a> and was graduate
+          student in Hod&nbsp;Lipson's
+          <a class="bubble" href="http://creativemachines.cornell.edu"
+            >Creative Machines Lab</a
+          >
+          at Cornell&nbsp;University where I&nbsp;worked on
+          <a href="projects/modularrobotics">modular&nbsp;robotics</a> and
+          <a href="projects/selfassembly">programmable&nbsp;matter</a>.
+          I&nbsp;have also been involved in
+          <a href="http://www.igniteithaca.com/">Ignite&nbsp;Ithaca</a>,
+          <a href="projects/kartensender">a&nbsp;postcards&nbsp;thing</a>,
+          <a href="http://www.nestoria.com">a&nbsp;property search engine</a>,
+          <a href="http://en.wikipedia.org/wiki/Corus"
+            >a&nbsp;steel&nbsp;factory</a
+          >, <a href="http://union.ic.ac.uk/arts/cinema/">a&nbsp;cinema</a>, and
+          <a href="http://cpep.cornell.edu/"
+            >a&nbsp;prison teaching&nbsp;program</a
+          >.
+        </p>
+
+        <p>
+          Before moving to the New World, I&nbsp;completed an M.Eng. (my
+          undergrad degree) at&nbsp;<a
+            href="https://en.wikipedia.org/wiki/Imperial_College_London"
+            >Imperial College London</a
+          >
+          and was born and raised in the country famous for
+          <a href="http://en.wikipedia.org/wiki/German_Autobahnen#Speed_limits"
+            >no&nbsp;speed&nbsp;limits</a
+          >
+          and
+          <a href="http://en.wikipedia.org/wiki/German_humor">no&nbsp;humor</a>.
+        </p>
+
+        <p style="font-size:smaller">
+          <span class="highlighter">Elsewhere online:</span><br />
+          <a href="https://twitter.com/jonemo">Twitter</a>,
+          <a href="https://www.linkedin.com/in/jonasneubert">LinkedIn</a>,
+          <a href="https://github.com/jonemo/">Github</a>,
+          <a href="https://scholar.google.com/citations?user=4NpKk9MAAAAJ"
+            >Google Scholar</a
+          >,
+          <a href="https://500px.com/jncj">500px</a>
+        </p>
+      </div>
+    </div>
+  </main>
+{{ end }}
