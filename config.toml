@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Jonas Neubert'
 
 enableRobotsTXT = true
+[permalinks]
+  work = '/projects/:title/'
 
 [outputs]
   home = ['HTML']
