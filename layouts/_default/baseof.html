@@ -30,10 +30,11 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
     <title itemprop="name">
       {{ if (eq .Title .Site.Title) }}
-        {{.Site.Title }}
+        {{ .Site.Title }}
       {{ else }}
-        {{ .Title }} - {{ .Site.Title }}
-      {{end}}
+        {{ .Title }} -
+        {{ .Site.Title }}
+      {{ end }}
     </title>
 
     {{ block "head" . }}{{ end }}
@@ -41,7 +42,7 @@
 
   <body>
     <div
-      class="min-h-screen flex flex-col overflow-x-hidden md:container md:flex-row"
+      class="min-h-screen w-full flex flex-col overflow-x-hidden md:container md:flex-row"
     >
       {{ partial "side-nav.html" . }}
       <main class="w-full">
