@@ -4,7 +4,11 @@
 
 
 @layer base {
-
+    
+    html{
+        @apply tracking-wider font-light  ;  /* bring back spacing from pre-Google fonts version of Quicksand */
+    } 
+    
     main a, main a:visited, main a:link {
         @apply text-red-600 decoration-transparent font-medium;
         
