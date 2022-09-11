@@ -4,13 +4,15 @@
     <ul>
       {{ range .Pages.ByParam "start_date" }}
         <li class="not-prose py-2 ">
-          <a  class="py-2 md:text-xl text-lg" href="{{ .Permalink }}"> {{ .Title }}</a> {{ .Params.start_date }}
+          <a class="py-2 md:text-xl text-lg" href="{{ .Permalink }}">
+            {{ .Title }}</a
+          >
+          {{ .Params.start_date }}
           {{ with .Params.end_date }}- {{ . }}{{ end }}
-          <p class="py-2 italic">{{.Params.subtitle}}</p>
+          <p class="py-2 italic">{{ .Params.subtitle }}</p>
 
-          {{$.Scratch.Set "tag_size" "small"}}
-          {{ partial "tags.html" .}}
-        
+          {{ $.Scratch.Set "tag_size" "small" }}
+          {{ partial "tags.html" . }}
         </li>
       {{ end }}
     </ul>

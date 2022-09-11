@@ -16,9 +16,13 @@
 
         {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
 
-        <li class="flex-initial block">
 
-          <a href="{{ .URL }}" class="inline-block md:px-2  hover:text-white hover:bg-red-600 {{ if $active }}underline{{ end }}"
+        <li class="flex-initial block">
+          <a
+            href="{{ .URL }}"
+            class="inline-block md:px-2  hover:text-white hover:bg-red-600 {{ if $active }}
+              underline
+            {{ end }}"
           >
             {{ .Name }}</a
           >
@@ -73,8 +77,6 @@
           <!-- icon source: https://simpleicons.org/?q=linkedin -->
         </a>
       </li>
-    </ul>
- 
     </ul>
   </nav>
 </header>
