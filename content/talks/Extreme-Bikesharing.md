@@ -11,8 +11,6 @@ Extreme Bikesharing: How I used Python to plan an epic Ford GoBike trip
 
 Presented at [SF Python Talk Night on Jan 8, 2020](https://www.meetup.com/sfpython/events/xkwxvqybccblb/) and at [Full Stack Developer Meetup on Jan 14, 2020](https://www.meetup.com/Full-Stack-Development-Meetup-Group/events/267022346/).
 
-
-
 Abstract
 --------
 
