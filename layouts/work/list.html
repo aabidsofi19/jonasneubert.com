@@ -2,7 +2,7 @@
   <main class="prose w-full px-4  mx-auto">
     <h1 class="mt-16">My Work</h1>
     <ul>
-      {{ range .Pages.ByParam "start_date" }}
+      {{ range (.Pages.ByParam "start_date").Reverse }}
         <li>
           <a href="{{ .Permalink }}"> {{ .Title }}</a> {{ .Params.start_date }}
           {{ with .Params.end_date }}- {{ . }}{{ end }}
