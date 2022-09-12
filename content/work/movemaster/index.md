@@ -1,6 +1,7 @@
 ---
 title: 'Mitsubishi Movemaster'
-start_date: 2008
+start_date: 2007
+end_date: 2008
 draft: false
 subtitle: 'Reverse engineering and reviving a 20-year old robot arm'
 ---

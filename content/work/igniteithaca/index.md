@@ -1,6 +1,7 @@
 ---
 title: 'Ignite Ithaca'
-date: 2022-08-27T18:09:38+05:30
+start_date: 2010
+end_date: 2011
 draft: false
 subtitle: ''
 ---
