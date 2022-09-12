@@ -27,6 +27,6 @@ In 2008 another phpBB community member with the excellent name Happy Döner [rel
 Thanks to the Internet Archive I was able to resurrect the screenshots of the Atlas Mod website below, but sadly none of Atlas Mod itself.
 
 
-![Atlas Mod Website screenshot (via archive.org)](atlas-mod-phpbb-website-screenshot-1.png)
+![Atlas Mod Website screenshot (via archive.org)](images/atlas-mod-phpbb-website-screenshot-1.png)
 
-![Atlas Mod Website screenshot (via archive.org)](atlas-mod-phpbb-website-screenshot-2.png)
+![Atlas Mod Website screenshot (via archive.org)](images/atlas-mod-phpbb-website-screenshot-2.png)
