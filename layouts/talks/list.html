@@ -1,6 +1,28 @@
 {{ define "main" }}
-  <article class="prose w-full md:w-10/12 px-4  py-10 md:py-6  mx-auto ">
-    <h1 class="mt-16">Upcoming Talks</h1>
+  <!-- header Image ( Me as a Speaker at a Conference)  -->
+  <div
+    class="relative w-full overflow-hidden p-0  max-w-5xl lg:mx-auto lg:my-2 lg:rounded-md"
+  >
+    <div
+      class="bg-gradient-to-b from-transparent to-black opacity-90  w-full h-auto absolute inset-0"
+    >
+      <!-- overlay -->
+    </div>
+
+    <img
+      src="/images/jonas-pycon.png"
+      class="mx-auto lg:rounded-md h-full"
+      alt=""
+    />
+    <h1
+      class="bottom-5 ml-4 lg:ml-10 text-2xl md:text-5xl font-semibold text-white absolute"
+    >
+      Talks And Conferences
+    </h1>
+  </div>
+
+  <article class="prose w-full md:w-10/12 px-4 py-10  mx-auto ">
+    <h2>Upcoming Talks</h2>
 
     <p>None scheduled!</p>
 
@@ -9,7 +31,7 @@
       next: jn@jonasneubert.com
     </p>
 
-    <h1>Conference Talks</h1>
+    <h2>Conference Talks</h2>
 
     <ul>
       {{ range .Pages }}
@@ -25,7 +47,7 @@
       {{ end }}
     </ul>
 
-    <h1>Academic Talks</h1>
+    <h2>Academic Talks</h2>
 
     <ul>
       <li>

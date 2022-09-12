@@ -1,12 +1,17 @@
 {{ define "main" }}
-  <main class="prose w-full px-4  mx-auto">
+  <main class="prose w-full px-4  max-w-5xl mx-auto">
     <h1 class="mt-16">My Work</h1>
     <ul>
+
       {{ range (.Pages.ByParam "start_date").Reverse }}
         <li>
           <a href="{{ .Permalink }}"> {{ .Title }}</a> {{ .Params.start_date }}
-          {{ with .Params.end_date }}- {{ . }}{{ end }}
 
+          {{ with .Params.end_date }}- {{ . }}{{ end }}
+          <p class="py-2 italic">{{ .Params.subtitle }}</p>
+
+          {{ $.Scratch.Set "tag_size" "small" }}
+          {{ partial "tags.html" . }}
         </li>
       {{ end }}
     </ul>

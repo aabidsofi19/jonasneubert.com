@@ -1,0 +1,10 @@
+<ul class="flex items-center gap-4">
+  {{ range .Params.tags }}
+    <li
+      class="
+                px-2 py-1 bg-gray-100 rounded"
+    >
+      {{ . }}
+    </li>
+  {{ end }}
+</ul>

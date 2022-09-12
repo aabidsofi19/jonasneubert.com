@@ -4,10 +4,10 @@ date: 2022-08-27T18:09:38+05:30
 draft: false
 start_date: 2003
 end_date: "present"
-subtitle: ''
+subtitle: 'Directory of german translations'
+tags: ["App development","Backend"]
 ---
 
-# Volutabrum.de
 
 [Volutabrum.de](http://volutabrum.de) is a directory of German translations of Latin texts.
 Sounds like a niche, but isn't.
