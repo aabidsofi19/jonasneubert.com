@@ -1,8 +1,7 @@
 {{ define "main" }}
-  <main class="prose w-full px-4  max-w-5xl mx-auto">
+  <section class="prose w-full px-4  max-w-5xl mx-auto">
     <h1 class="mt-16">My Work</h1>
     <ul>
-
       {{ range (.Pages.ByParam "start_date").Reverse }}
         <li>
           <a href="{{ .Permalink }}"> {{ .Title }}</a> {{ .Params.start_date }}
@@ -128,5 +127,5 @@
       >
       contains a few clips.
     </p>
-  </main>
+  </section>
 {{ end }}
